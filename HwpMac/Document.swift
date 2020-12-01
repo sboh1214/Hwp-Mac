@@ -1,10 +1,3 @@
-//
-//  Document.swift
-//  HwpMac
-//
-//  Created by Seungbin Oh on 2020/12/01.
-//
-
 import Cocoa
 
 class Document: NSDocument {

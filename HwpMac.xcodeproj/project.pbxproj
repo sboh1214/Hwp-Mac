@@ -3,17 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CB8FC5A3A89FA42A6B3DB51 /* Pods_HwpMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F8488A8D0A98C170E4E472 /* Pods_HwpMac.framework */; };
 		3611344D257684AE004B6C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611344C257684AE004B6C12 /* AppDelegate.swift */; };
-		3611344F257684AE004B6C12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611344E257684AE004B6C12 /* ViewController.swift */; };
 		36113451257684AE004B6C12 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36113450257684AE004B6C12 /* Document.swift */; };
 		36113453257684AF004B6C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36113452257684AF004B6C12 /* Assets.xcassets */; };
 		36113456257684AF004B6C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36113454257684AF004B6C12 /* Main.storyboard */; };
 		36113462257684AF004B6C12 /* HwpMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36113461257684AF004B6C12 /* HwpMacTests.swift */; };
 		3611346D257684AF004B6C12 /* HwpMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611346C257684AF004B6C12 /* HwpMacUITests.swift */; };
+		366A911F257696030007A5F0 /* LeftBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A911E257696030007A5F0 /* LeftBarViewController.swift */; };
+		5C9A9162C630E8FEB3A5ED00 /* Pods_HwpMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747EC856FA68AFA2389602AE /* Pods_HwpMacTests.framework */; };
+		B600B52D85B90F05F63057E3 /* Pods_HwpMac_HwpMacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E9AA27B8382A08180095E6 /* Pods_HwpMac_HwpMacUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3394297DDDB702BAA783D2E6 /* Pods-HwpMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwpMacTests.release.xcconfig"; path = "Target Support Files/Pods-HwpMacTests/Pods-HwpMacTests.release.xcconfig"; sourceTree = "<group>"; };
 		36113449257684AE004B6C12 /* HwpMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HwpMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3611344C257684AE004B6C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3611344E257684AE004B6C12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36113450257684AE004B6C12 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		36113452257684AF004B6C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36113455257684AF004B6C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +51,15 @@
 		36113468257684AF004B6C12 /* HwpMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HwpMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3611346C257684AF004B6C12 /* HwpMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HwpMacUITests.swift; sourceTree = "<group>"; };
 		3611346E257684AF004B6C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366A911E257696030007A5F0 /* LeftBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBarViewController.swift; sourceTree = "<group>"; };
+		42F8488A8D0A98C170E4E472 /* Pods_HwpMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HwpMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C5019CD5D5F6DCB9DA8E52B /* Pods-HwpMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwpMac.release.xcconfig"; path = "Target Support Files/Pods-HwpMac/Pods-HwpMac.release.xcconfig"; sourceTree = "<group>"; };
+		747EC856FA68AFA2389602AE /* Pods_HwpMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HwpMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E54D612F4C7BF4C550307F /* Pods-HwpMac-HwpMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwpMac-HwpMacUITests.release.xcconfig"; path = "Target Support Files/Pods-HwpMac-HwpMacUITests/Pods-HwpMac-HwpMacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		98E9AA27B8382A08180095E6 /* Pods_HwpMac_HwpMacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HwpMac_HwpMacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7664EE0E29267D7763A2253 /* Pods-HwpMac-HwpMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwpMac-HwpMacUITests.debug.xcconfig"; path = "Target Support Files/Pods-HwpMac-HwpMacUITests/Pods-HwpMac-HwpMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0CB83B65AE958F3F70C6E80 /* Pods-HwpMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwpMac.debug.xcconfig"; path = "Target Support Files/Pods-HwpMac/Pods-HwpMac.debug.xcconfig"; sourceTree = "<group>"; };
+		DEF07C2F0EEE7A9EE0EA436E /* Pods-HwpMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwpMacTests.debug.xcconfig"; path = "Target Support Files/Pods-HwpMacTests/Pods-HwpMacTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB8FC5A3A89FA42A6B3DB51 /* Pods_HwpMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C9A9162C630E8FEB3A5ED00 /* Pods_HwpMacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B600B52D85B90F05F63057E3 /* Pods_HwpMac_HwpMacUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +97,8 @@
 				36113460257684AF004B6C12 /* HwpMacTests */,
 				3611346B257684AF004B6C12 /* HwpMacUITests */,
 				3611344A257684AE004B6C12 /* Products */,
+				A0675086768A588657A4E3EC /* Pods */,
+				C2A3FB403C3C0DD9BCEDE5FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +116,12 @@
 			isa = PBXGroup;
 			children = (
 				3611344C257684AE004B6C12 /* AppDelegate.swift */,
-				3611344E257684AE004B6C12 /* ViewController.swift */,
 				36113450257684AE004B6C12 /* Document.swift */,
 				36113452257684AF004B6C12 /* Assets.xcassets */,
 				36113454257684AF004B6C12 /* Main.storyboard */,
 				36113457257684AF004B6C12 /* Info.plist */,
 				36113458257684AF004B6C12 /* HwpMac.entitlements */,
+				366A911E257696030007A5F0 /* LeftBarViewController.swift */,
 			);
 			path = HwpMac;
 			sourceTree = "<group>";
@@ -127,6 +144,29 @@
 			path = HwpMacUITests;
 			sourceTree = "<group>";
 		};
+		A0675086768A588657A4E3EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0CB83B65AE958F3F70C6E80 /* Pods-HwpMac.debug.xcconfig */,
+				6C5019CD5D5F6DCB9DA8E52B /* Pods-HwpMac.release.xcconfig */,
+				A7664EE0E29267D7763A2253 /* Pods-HwpMac-HwpMacUITests.debug.xcconfig */,
+				77E54D612F4C7BF4C550307F /* Pods-HwpMac-HwpMacUITests.release.xcconfig */,
+				DEF07C2F0EEE7A9EE0EA436E /* Pods-HwpMacTests.debug.xcconfig */,
+				3394297DDDB702BAA783D2E6 /* Pods-HwpMacTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C2A3FB403C3C0DD9BCEDE5FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F8488A8D0A98C170E4E472 /* Pods_HwpMac.framework */,
+				98E9AA27B8382A08180095E6 /* Pods_HwpMac_HwpMacUITests.framework */,
+				747EC856FA68AFA2389602AE /* Pods_HwpMacTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36113471257684AF004B6C12 /* Build configuration list for PBXNativeTarget "HwpMac" */;
 			buildPhases = (
+				0FE3EC3B291BFCB4F6871E50 /* [CP] Check Pods Manifest.lock */,
 				36113445257684AE004B6C12 /* Sources */,
 				36113446257684AE004B6C12 /* Frameworks */,
 				36113447257684AE004B6C12 /* Resources */,
+				BC36D0ACD72DC2646E01FEA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36113474257684AF004B6C12 /* Build configuration list for PBXNativeTarget "HwpMacTests" */;
 			buildPhases = (
+				8C32A8251A050E92EA1C32BF /* [CP] Check Pods Manifest.lock */,
 				36113459257684AF004B6C12 /* Sources */,
 				3611345A257684AF004B6C12 /* Frameworks */,
 				3611345B257684AF004B6C12 /* Resources */,
@@ -169,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36113477257684AF004B6C12 /* Build configuration list for PBXNativeTarget "HwpMacUITests" */;
 			buildPhases = (
+				C8491B1F4F49CD40B0E3972D /* [CP] Check Pods Manifest.lock */,
 				36113464257684AF004B6C12 /* Sources */,
 				36113465257684AF004B6C12 /* Frameworks */,
 				36113466257684AF004B6C12 /* Resources */,
+				D166A748F25E73DC5CF1485C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,14 +296,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FE3EC3B291BFCB4F6871E50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HwpMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C32A8251A050E92EA1C32BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HwpMacTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC36D0ACD72DC2646E01FEA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HwpMac/Pods-HwpMac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HwpMac/Pods-HwpMac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HwpMac/Pods-HwpMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8491B1F4F49CD40B0E3972D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HwpMac-HwpMacUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D166A748F25E73DC5CF1485C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HwpMac-HwpMacUITests/Pods-HwpMac-HwpMacUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HwpMac-HwpMacUITests/Pods-HwpMac-HwpMacUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HwpMac-HwpMacUITests/Pods-HwpMac-HwpMacUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		36113445257684AE004B6C12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3611344F257684AE004B6C12 /* ViewController.swift in Sources */,
 				3611344D257684AE004B6C12 /* AppDelegate.swift in Sources */,
 				36113451257684AE004B6C12 /* Document.swift in Sources */,
+				366A911F257696030007A5F0 /* LeftBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +504,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -411,7 +558,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -422,6 +568,7 @@
 		};
 		36113472257684AF004B6C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0CB83B65AE958F3F70C6E80 /* Pods-HwpMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -435,6 +582,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.sboh.HwpMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -443,6 +591,7 @@
 		};
 		36113473257684AF004B6C12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C5019CD5D5F6DCB9DA8E52B /* Pods-HwpMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +605,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.sboh.HwpMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -464,8 +614,9 @@
 		};
 		36113475257684AF004B6C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF07C2F0EEE7A9EE0EA436E /* Pods-HwpMacTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -486,8 +637,9 @@
 		};
 		36113476257684AF004B6C12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3394297DDDB702BAA783D2E6 /* Pods-HwpMacTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -508,8 +660,9 @@
 		};
 		36113478257684AF004B6C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7664EE0E29267D7763A2253 /* Pods-HwpMac-HwpMacUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 86Z79M22CQ;
@@ -528,8 +681,9 @@
 		};
 		36113479257684AF004B6C12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77E54D612F4C7BF4C550307F /* Pods-HwpMac-HwpMacUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 86Z79M22CQ;
