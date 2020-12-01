@@ -1,13 +1,6 @@
-//
-//  ViewController.swift
-//  HwpMac
-//
-//  Created by Seungbin Oh on 2020/12/01.
-//
-
 import Cocoa
 
-class ViewController: NSViewController {
+class SideBarViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
