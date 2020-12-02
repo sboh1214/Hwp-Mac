@@ -1,6 +1,6 @@
 import Cocoa
 
-class LeftBarViewController: NSViewController {
+class DocumentViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

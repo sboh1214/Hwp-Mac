@@ -14,7 +14,10 @@
 		36113456257684AF004B6C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36113454257684AF004B6C12 /* Main.storyboard */; };
 		36113462257684AF004B6C12 /* HwpMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36113461257684AF004B6C12 /* HwpMacTests.swift */; };
 		3611346D257684AF004B6C12 /* HwpMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611346C257684AF004B6C12 /* HwpMacUITests.swift */; };
-		366A911F257696030007A5F0 /* LeftBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A911E257696030007A5F0 /* LeftBarViewController.swift */; };
+		366A911F257696030007A5F0 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A911E257696030007A5F0 /* SidebarViewController.swift */; };
+		36F875EE257748EB00346D64 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875ED257748EB00346D64 /* DocumentViewController.swift */; };
+		36F875F32577492300346D64 /* InspectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F22577492300346D64 /* InspectorViewController.swift */; };
+		36F875F82577496500346D64 /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F72577496500346D64 /* MainSplitViewController.swift */; };
 		5C9A9162C630E8FEB3A5ED00 /* Pods_HwpMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747EC856FA68AFA2389602AE /* Pods_HwpMacTests.framework */; };
 		B600B52D85B90F05F63057E3 /* Pods_HwpMac_HwpMacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E9AA27B8382A08180095E6 /* Pods_HwpMac_HwpMacUITests.framework */; };
 /* End PBXBuildFile section */
@@ -51,7 +54,10 @@
 		36113468257684AF004B6C12 /* HwpMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HwpMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3611346C257684AF004B6C12 /* HwpMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HwpMacUITests.swift; sourceTree = "<group>"; };
 		3611346E257684AF004B6C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		366A911E257696030007A5F0 /* LeftBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBarViewController.swift; sourceTree = "<group>"; };
+		366A911E257696030007A5F0 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		36F875ED257748EB00346D64 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		36F875F22577492300346D64 /* InspectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorViewController.swift; sourceTree = "<group>"; };
+		36F875F72577496500346D64 /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		42F8488A8D0A98C170E4E472 /* Pods_HwpMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HwpMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5019CD5D5F6DCB9DA8E52B /* Pods-HwpMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwpMac.release.xcconfig"; path = "Target Support Files/Pods-HwpMac/Pods-HwpMac.release.xcconfig"; sourceTree = "<group>"; };
 		747EC856FA68AFA2389602AE /* Pods_HwpMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HwpMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +127,10 @@
 				36113454257684AF004B6C12 /* Main.storyboard */,
 				36113457257684AF004B6C12 /* Info.plist */,
 				36113458257684AF004B6C12 /* HwpMac.entitlements */,
-				366A911E257696030007A5F0 /* LeftBarViewController.swift */,
+				366A911E257696030007A5F0 /* SidebarViewController.swift */,
+				36F875ED257748EB00346D64 /* DocumentViewController.swift */,
+				36F875F22577492300346D64 /* InspectorViewController.swift */,
+				36F875F72577496500346D64 /* MainSplitViewController.swift */,
 			);
 			path = HwpMac;
 			sourceTree = "<group>";
@@ -404,9 +413,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F875F32577492300346D64 /* InspectorViewController.swift in Sources */,
 				3611344D257684AE004B6C12 /* AppDelegate.swift in Sources */,
+				36F875F82577496500346D64 /* MainSplitViewController.swift in Sources */,
+				36F875EE257748EB00346D64 /* DocumentViewController.swift in Sources */,
 				36113451257684AE004B6C12 /* Document.swift in Sources */,
-				366A911F257696030007A5F0 /* LeftBarViewController.swift in Sources */,
+				366A911F257696030007A5F0 /* SidebarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

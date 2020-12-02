@@ -4,6 +4,7 @@
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
         <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
+        <capability name="Search Toolbar Item" minToolsVersion="12.0" minSystemVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +25,11 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
+                                            <connections>
+                                                <segue destination="PLp-T2-OIy" kind="show" id="CaS-0e-Ogc"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Services" id="NMo-om-nkz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -624,6 +629,9 @@
                                                 <action selector="toggleSidebar:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Show Status Bar" id="vJ7-XC-2ph">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
                                         <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
                                             <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                             <connections>
@@ -680,7 +688,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="75" y="-78"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="shH-DZ-1Vk">
@@ -728,31 +736,23 @@
             </objects>
             <point key="canvasLocation" x="74" y="282"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Main Split View Controller-->
         <scene sceneID="b2i-Zr-MKJ">
             <objects>
-                <splitViewController id="Wgb-ee-1nB" sceneMemberID="viewController">
-                    <splitViewItems>
-                        <splitViewItem canCollapse="YES" holdingPriority="260" behavior="sidebar" id="byJ-2X-dm0"/>
-                        <splitViewItem id="ajM-tn-XDb"/>
-                    </splitViewItems>
-                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="OFI-FB-CLa">
+                <customObject id="cP0-dx-KXt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <splitViewController id="Wgb-ee-1nB" customClass="MainSplitViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="eXx-rx-PfT">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </splitView>
-                    <connections>
-                        <segue destination="xzk-8R-yJ5" kind="relationship" relationship="splitItems" id="bPX-FE-rJe"/>
-                        <segue destination="9rE-yf-ZEQ" kind="relationship" relationship="splitItems" id="tqp-p5-s22"/>
-                    </connections>
                 </splitViewController>
-                <customObject id="cP0-dx-KXt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="716"/>
+            <point key="canvasLocation" x="74" y="704"/>
         </scene>
-        <!--Left Bar View Controller-->
+        <!--Sidebar View Controller-->
         <scene sceneID="cCu-TP-mMt">
             <objects>
-                <viewController id="xzk-8R-yJ5" customClass="LeftBarViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sidebar View" id="xzk-8R-yJ5" customClass="SidebarViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="6gs-8z-kpP">
                         <rect key="frame" x="0.0" y="0.0" width="149" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -762,59 +762,188 @@
                 </viewController>
                 <customObject id="d0U-Gp-a9i" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-77" y="1166"/>
+            <point key="canvasLocation" x="-242" y="1060"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xd2-4b-zbD">
+        <!--Document View Controller-->
+        <scene sceneID="is5-bK-fMD">
             <objects>
-                <viewController id="9rE-yf-ZEQ" sceneMemberID="viewController">
+                <customObject id="b9I-Ra-VSk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="Document View" id="1ov-dW-WgX" customClass="DocumentViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Ei3-r9-ea2">
-                        <rect key="frame" x="0.0" y="0.0" width="302" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView appearanceType="aqua" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" allowsMagnification="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSn-cj-V26">
-                                <rect key="frame" x="0.0" y="20" width="282" height="228"/>
+                                <rect key="frame" x="0.0" y="24" width="450" height="276"/>
                                 <clipView key="contentView" drawsBackground="NO" id="pbK-60-28R">
-                                    <rect key="frame" x="0.0" y="0.0" width="267" height="213"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="435" height="261"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView verticallyResizable="YES" usesFontPanel="YES" usesInspectorBar="YES" findStyle="bar" allowsDocumentBackgroundColorChange="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="bA0-yo-JFo">
-                                            <rect key="frame" x="0.0" y="0.0" width="267" height="213"/>
+                                        <textView verticallyResizable="YES" findStyle="bar" allowsDocumentBackgroundColorChange="YES" allowsUndo="YES" spellingCorrection="YES" smartInsertDelete="YES" id="bA0-yo-JFo">
+                                            <rect key="frame" x="0.0" y="0.0" width="435" height="261"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <size key="minSize" width="267" height="213"/>
-                                            <size key="maxSize" width="267" height="10000000"/>
+                                            <size key="minSize" width="435" height="261"/>
+                                            <size key="maxSize" width="450" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="SbW-Uo-jXc">
-                                    <rect key="frame" x="0.0" y="213" width="267" height="15"/>
+                                    <rect key="frame" x="0.0" y="261" width="435" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="2ab-X2-3ms">
-                                    <rect key="frame" x="267" y="0.0" width="15" height="213"/>
+                                    <rect key="frame" x="435" y="0.0" width="15" height="261"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qyj-P6-FV0">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="6hK-5v-VgE"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="MSn-cj-V26" firstAttribute="trailing" secondItem="AIT-IC-813" secondAttribute="trailing" id="C9X-VN-AkU"/>
-                            <constraint firstItem="MSn-cj-V26" firstAttribute="top" secondItem="9VH-1B-jkF" secondAttribute="top" id="LrZ-bB-XAj"/>
-                            <constraint firstItem="MSn-cj-V26" firstAttribute="leading" secondItem="9VH-1B-jkF" secondAttribute="leading" id="oiS-xB-3xM"/>
-                            <constraint firstItem="AIT-IC-813" firstAttribute="bottom" secondItem="MSn-cj-V26" secondAttribute="bottom" id="yJA-Wt-pEb"/>
+                            <constraint firstItem="MSn-cj-V26" firstAttribute="trailing" secondItem="Ei3-r9-ea2" secondAttribute="trailing" id="C9X-VN-AkU"/>
+                            <constraint firstAttribute="bottom" secondItem="qyj-P6-FV0" secondAttribute="bottom" id="ESw-AE-JE2"/>
+                            <constraint firstItem="MSn-cj-V26" firstAttribute="top" secondItem="Ei3-r9-ea2" secondAttribute="top" id="LrZ-bB-XAj"/>
+                            <constraint firstAttribute="trailing" secondItem="qyj-P6-FV0" secondAttribute="trailing" id="gr9-rE-ICE"/>
+                            <constraint firstItem="qyj-P6-FV0" firstAttribute="top" secondItem="MSn-cj-V26" secondAttribute="bottom" id="nra-au-5Jp"/>
+                            <constraint firstItem="MSn-cj-V26" firstAttribute="leading" secondItem="Ei3-r9-ea2" secondAttribute="leading" id="oiS-xB-3xM"/>
+                            <constraint firstItem="qyj-P6-FV0" firstAttribute="leading" secondItem="Ei3-r9-ea2" secondAttribute="leading" id="qvs-CG-yze"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="9VH-1B-jkF"/>
-                        <viewLayoutGuide key="layoutMargins" id="AIT-IC-813"/>
                     </view>
                 </viewController>
-                <customObject id="R1z-o1-65e" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173" y="1166"/>
+            <point key="canvasLocation" x="74" y="1060"/>
+        </scene>
+        <!--Inspector View Controller-->
+        <scene sceneID="040-zk-bB1">
+            <objects>
+                <viewController storyboardIdentifier="Inspector View" id="Vmr-aC-iTt" customClass="InspectorViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="o0f-QN-Q06">
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="dEb-3K-8xH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450" y="1060"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="ymK-Ek-xby">
+            <objects>
+                <windowController showSeguePresentationStyle="single" id="PLp-T2-OIy" sceneMemberID="viewController">
+                    <window key="window" title="Preference" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" toolbarStyle="unified" id="AI3-HY-88z">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="245" y="301" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
+                        <view key="contentView" id="Fus-9B-C5C">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <toolbar key="toolbar" implicitIdentifier="09D11707-F4A3-4FD5-970E-AC5832E91C2B" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="SyG-BJ-VHh">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="442A5441-947E-4B78-86A4-80FBC9430CF2" label="Import" paletteLabel="Import" tag="-1" image="Import" id="OwO-HC-8uP">
+                                    <size key="minSize" width="19" height="22"/>
+                                    <size key="maxSize" width="19" height="22"/>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="17852155-429F-44DE-BC72-39B8BB2246FE" label="Export" paletteLabel="Export" tag="-1" image="Export" id="YD2-w6-7h4">
+                                    <size key="minSize" width="18" height="22"/>
+                                    <size key="maxSize" width="18" height="22"/>
+                                </toolbarItem>
+                                <searchToolbarItem implicitItemIdentifier="DA29BB6E-E1FC-4765-AAAE-22C3A6B554CA" label="Search" paletteLabel="Search" visibilityPriority="1001" id="3a7-l7-6Kt">
+                                    <nil key="toolTip"/>
+                                    <searchField key="view" verticalHuggingPriority="750" textCompletion="NO" id="VUX-vX-EWd">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" id="E35-qH-E8O">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </searchFieldCell>
+                                    </searchField>
+                                </searchToolbarItem>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="LfE-Ck-Acm"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="jQ3-b4-LiY"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="OwO-HC-8uP"/>
+                                <toolbarItem reference="YD2-w6-7h4"/>
+                                <searchToolbarItem reference="3a7-l7-6Kt"/>
+                            </defaultToolbarItems>
+                        </toolbar>
+                        <connections>
+                            <outlet property="delegate" destination="PLp-T2-OIy" id="dyy-LN-Hj5"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="QGM-dz-BBv" kind="relationship" relationship="window.shadowedContentViewController" id="ugU-CI-Bkk"/>
+                    </connections>
+                </windowController>
+                <customObject id="KbC-23-69Q" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="282"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="g3O-ju-4oh">
+            <objects>
+                <splitViewController id="QGM-dz-BBv" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem canCollapse="YES" holdingPriority="260" behavior="sidebar" id="68h-UW-j0J"/>
+                        <splitViewItem id="Awj-ib-pO1"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="qXS-LV-fkJ">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </splitView>
+                    <connections>
+                        <segue destination="KRM-DN-zIP" kind="relationship" relationship="splitItems" id="dHc-gz-Xor"/>
+                        <segue destination="Px6-KM-twA" kind="relationship" relationship="splitItems" id="fZr-zp-kQy"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="FIM-Rn-dLM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="704"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8bg-ho-Rt8">
+            <objects>
+                <viewController id="KRM-DN-zIP" sceneMemberID="viewController">
+                    <view key="view" id="fIL-zs-te3">
+                        <rect key="frame" x="0.0" y="0.0" width="149" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <viewLayoutGuide key="safeArea" id="uFJ-7h-Ijc"/>
+                        <viewLayoutGuide key="layoutMargins" id="yDt-0A-osO"/>
+                    </view>
+                </viewController>
+                <customObject id="cCL-q2-wmU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="1135"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8Ft-9A-G5L">
+            <objects>
+                <viewController id="Px6-KM-twA" sceneMemberID="viewController">
+                    <view key="view" id="Ofm-O4-rDQ">
+                        <rect key="frame" x="0.0" y="0.0" width="302" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <viewLayoutGuide key="safeArea" id="eGg-un-65F"/>
+                        <viewLayoutGuide key="layoutMargins" id="jGC-7s-uSa"/>
+                    </view>
+                </viewController>
+                <customObject id="73X-hX-X7O" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="1135"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Export" width="12" height="15"/>
+        <image name="Import" width="12" height="14"/>
         <image name="SidebarLeft" width="15" height="12"/>
     </resources>
 </document>

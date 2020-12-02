@@ -1,19 +1,10 @@
 import Cocoa
 
-class SideBarViewController: NSViewController {
+class SidebarViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Do view setup here.
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
+    
 }
-
