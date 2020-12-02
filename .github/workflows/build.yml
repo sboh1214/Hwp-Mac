@@ -1,0 +1,19 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: CocoaPods
+      run: pod install
+    - name: Build
+      run: xcodebuild -workspace HwpMac.xcworkspace -scheme HwpMac | xcpretty
