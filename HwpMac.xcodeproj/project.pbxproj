@@ -14,12 +14,11 @@
 		36113456257684AF004B6C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36113454257684AF004B6C12 /* Main.storyboard */; };
 		36113462257684AF004B6C12 /* HwpMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36113461257684AF004B6C12 /* HwpMacTests.swift */; };
 		3611346D257684AF004B6C12 /* HwpMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611346C257684AF004B6C12 /* HwpMacUITests.swift */; };
-		3626D30E25779612005C220A /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3626D30D25779612005C220A /* CategoryController.swift */; };
 		3640DDE42577DE850010DAB3 /* Preference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3640DDE32577DE850010DAB3 /* Preference.storyboard */; };
-		366A911F257696030007A5F0 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A911E257696030007A5F0 /* SidebarViewController.swift */; };
-		36F875EE257748EB00346D64 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875ED257748EB00346D64 /* DocumentViewController.swift */; };
-		36F875F32577492300346D64 /* InspectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F22577492300346D64 /* InspectorViewController.swift */; };
-		36F875F82577496500346D64 /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F72577496500346D64 /* MainSplitViewController.swift */; };
+		366A911F257696030007A5F0 /* SidebarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A911E257696030007A5F0 /* SidebarVC.swift */; };
+		36F875EE257748EB00346D64 /* DocumentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875ED257748EB00346D64 /* DocumentVC.swift */; };
+		36F875F32577492300346D64 /* InspectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F22577492300346D64 /* InspectorVC.swift */; };
+		36F875F82577496500346D64 /* MainSplitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F72577496500346D64 /* MainSplitVC.swift */; };
 		5C9A9162C630E8FEB3A5ED00 /* Pods_HwpMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747EC856FA68AFA2389602AE /* Pods_HwpMacTests.framework */; };
 		B600B52D85B90F05F63057E3 /* Pods_HwpMac_HwpMacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E9AA27B8382A08180095E6 /* Pods_HwpMac_HwpMacUITests.framework */; };
 /* End PBXBuildFile section */
@@ -56,12 +55,11 @@
 		36113468257684AF004B6C12 /* HwpMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HwpMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3611346C257684AF004B6C12 /* HwpMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HwpMacUITests.swift; sourceTree = "<group>"; };
 		3611346E257684AF004B6C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3626D30D25779612005C220A /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
 		3640DDE32577DE850010DAB3 /* Preference.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preference.storyboard; sourceTree = "<group>"; };
-		366A911E257696030007A5F0 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
-		36F875ED257748EB00346D64 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
-		36F875F22577492300346D64 /* InspectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorViewController.swift; sourceTree = "<group>"; };
-		36F875F72577496500346D64 /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
+		366A911E257696030007A5F0 /* SidebarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarVC.swift; sourceTree = "<group>"; };
+		36F875ED257748EB00346D64 /* DocumentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentVC.swift; sourceTree = "<group>"; };
+		36F875F22577492300346D64 /* InspectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorVC.swift; sourceTree = "<group>"; };
+		36F875F72577496500346D64 /* MainSplitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitVC.swift; sourceTree = "<group>"; };
 		42F8488A8D0A98C170E4E472 /* Pods_HwpMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HwpMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5019CD5D5F6DCB9DA8E52B /* Pods-HwpMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwpMac.release.xcconfig"; path = "Target Support Files/Pods-HwpMac/Pods-HwpMac.release.xcconfig"; sourceTree = "<group>"; };
 		747EC856FA68AFA2389602AE /* Pods_HwpMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HwpMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,11 +155,10 @@
 		3640DDE22577DE510010DAB3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				366A911E257696030007A5F0 /* SidebarViewController.swift */,
-				36F875ED257748EB00346D64 /* DocumentViewController.swift */,
-				36F875F22577492300346D64 /* InspectorViewController.swift */,
-				36F875F72577496500346D64 /* MainSplitViewController.swift */,
-				3626D30D25779612005C220A /* CategoryController.swift */,
+				366A911E257696030007A5F0 /* SidebarVC.swift */,
+				36F875ED257748EB00346D64 /* DocumentVC.swift */,
+				36F875F22577492300346D64 /* InspectorVC.swift */,
+				36F875F72577496500346D64 /* MainSplitVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,8 +202,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36113471257684AF004B6C12 /* Build configuration list for PBXNativeTarget "HwpMac" */;
 			buildPhases = (
-				36B82B3A2577E08E00204384 /* ShellScript */,
 				0FE3EC3B291BFCB4F6871E50 /* [CP] Check Pods Manifest.lock */,
+				36B82B3A2577E08E00204384 /* ShellScript */,
 				36113445257684AE004B6C12 /* Sources */,
 				36113446257684AE004B6C12 /* Frameworks */,
 				36113447257684AE004B6C12 /* Resources */,
@@ -454,13 +451,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F875F32577492300346D64 /* InspectorViewController.swift in Sources */,
+				36F875F32577492300346D64 /* InspectorVC.swift in Sources */,
 				3611344D257684AE004B6C12 /* AppDelegate.swift in Sources */,
-				36F875F82577496500346D64 /* MainSplitViewController.swift in Sources */,
-				3626D30E25779612005C220A /* CategoryController.swift in Sources */,
-				36F875EE257748EB00346D64 /* DocumentViewController.swift in Sources */,
+				36F875F82577496500346D64 /* MainSplitVC.swift in Sources */,
+				36F875EE257748EB00346D64 /* DocumentVC.swift in Sources */,
 				36113451257684AE004B6C12 /* Document.swift in Sources */,
-				366A911F257696030007A5F0 /* SidebarViewController.swift in Sources */,
+				366A911F257696030007A5F0 /* SidebarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

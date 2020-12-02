@@ -733,6 +733,7 @@
                                 <viewController key="viewController" id="SFw-HN-ZVa">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pwn-H5-J8m">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NbB-O6-oq5">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -747,6 +748,7 @@
                                 <viewController key="viewController" id="CwK-GQ-hoJ">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z9I-ta-C5u">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" bezelStyle="rounded" image="Italic" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aG6-HT-Fr1">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -760,6 +762,7 @@
                                 <viewController key="viewController" id="Xi8-R9-xs5">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PlL-G6-AiG">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" bezelStyle="rounded" image="Underline" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KnD-1C-cSZ">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -774,6 +777,7 @@
                                 <viewController key="viewController" id="b9r-ST-Qvf">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KR3-nW-Cfx">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" bezelStyle="rounded" image="Photo" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YcC-hq-eoG">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -787,6 +791,7 @@
                                 <viewController key="viewController" id="nkR-tS-Tl5">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dze-oc-Woh">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" bezelStyle="rounded" image="Table" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZuQ-YU-878">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -800,6 +805,7 @@
                                 <viewController key="viewController" id="Esp-fP-gjM">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="agY-uK-zlB">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" bezelStyle="rounded" image="Equation" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hsc-A2-INy">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -819,11 +825,11 @@
             </objects>
             <point key="canvasLocation" x="74" y="282"/>
         </scene>
-        <!--Main Split View Controller-->
+        <!--Main SplitVC-->
         <scene sceneID="b2i-Zr-MKJ">
             <objects>
                 <customObject id="cP0-dx-KXt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <splitViewController id="Wgb-ee-1nB" customClass="MainSplitViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="Wgb-ee-1nB" customClass="MainSplitVC" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="eXx-rx-PfT">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -832,10 +838,10 @@
             </objects>
             <point key="canvasLocation" x="74" y="722"/>
         </scene>
-        <!--Sidebar View Controller-->
+        <!--SidebarVC-->
         <scene sceneID="cCu-TP-mMt">
             <objects>
-                <viewController storyboardIdentifier="Sidebar View" id="xzk-8R-yJ5" customClass="SidebarViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sidebar View" id="xzk-8R-yJ5" customClass="SidebarVC" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="6gs-8z-kpP">
                         <rect key="frame" x="0.0" y="0.0" width="149" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -847,11 +853,11 @@
             </objects>
             <point key="canvasLocation" x="-241" y="1087"/>
         </scene>
-        <!--Document View Controller-->
+        <!--DocumentVC-->
         <scene sceneID="is5-bK-fMD">
             <objects>
                 <customObject id="b9I-Ra-VSk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="Document View" id="1ov-dW-WgX" customClass="DocumentViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Document View" id="1ov-dW-WgX" customClass="DocumentVC" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Ei3-r9-ea2">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -903,10 +909,10 @@
             </objects>
             <point key="canvasLocation" x="74" y="1087"/>
         </scene>
-        <!--Inspector View Controller-->
+        <!--InspectorVC-->
         <scene sceneID="040-zk-bB1">
             <objects>
-                <viewController storyboardIdentifier="Inspector View" id="Vmr-aC-iTt" customClass="InspectorViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Inspector View" id="Vmr-aC-iTt" customClass="InspectorVC" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="o0f-QN-Q06">
                         <rect key="frame" x="0.0" y="0.0" width="270" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -1,6 +1,6 @@
 import Cocoa
 
-class SidebarViewController: NSViewController {
+class DocumentVC: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

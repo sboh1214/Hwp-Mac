@@ -1,6 +1,6 @@
 import Cocoa
 
-class MainSplitViewController: NSSplitViewController {
+class MainSplitVC: NSSplitViewController {
     private let splitViewResorationIdentifier = "dev.sboh.HwpMac:mainSplitViewController"
 
     override func viewDidLoad() {
