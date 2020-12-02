@@ -2,7 +2,7 @@ import Cocoa
 
 class CategoryController: NSViewController {
     @IBOutlet weak var tableView: NSTableView!
-    
+
     override func viewDidLoad() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -10,7 +10,7 @@ class CategoryController: NSViewController {
 }
 
 extension CategoryController: NSTableViewDataSource {
-  
+
   func numberOfRows(in tableView: NSTableView) -> Int {
     return cellList.count
   }
@@ -29,7 +29,7 @@ extension CategoryController: NSTableViewDelegate {
     var image: NSImage?
     var text: String = ""
     var cellIdentifier: String = ""
-    
+
     let item = cellList[row]
 
     // 2

@@ -11,6 +11,8 @@ target 'HwpMac' do
   pod 'Defaults', '4.1.0'
   pod 'KeyboardShortcuts', '0.6.0'
 
+  pod 'SwiftLint', '0.41.0'
+
   target 'HwpMacTests' do
     inherit! :search_paths
     # Pods for testing
