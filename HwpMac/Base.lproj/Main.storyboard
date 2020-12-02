@@ -2,10 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="17008"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
         <capability name="Search Toolbar Item" minToolsVersion="12.0" minSystemVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -728,6 +731,90 @@
                             <outlet property="delegate" destination="4vk-mm-a4h" id="8r0-fP-cRk"/>
                         </connections>
                     </window>
+                    <touchBar key="touchBar" id="sCj-jF-1Vd">
+                        <touchBarItems>
+                            <touchBarItem id="IYx-ue-XRe">
+                                <viewController key="viewController" id="SFw-HN-ZVa">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pwn-H5-J8m">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NbB-O6-oq5">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <imageReference key="image" image="Bold" symbolScale="large"/>
+                                            <string key="keyEquivalent">b</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="EV8-Ea-eT0">
+                                <viewController key="viewController" id="CwK-GQ-hoJ">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z9I-ta-C5u">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="Italic" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aG6-HT-Fr1">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <string key="keyEquivalent">i</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="fe3-rU-ft2">
+                                <viewController key="viewController" id="Xi8-R9-xs5">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PlL-G6-AiG">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="Underline" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KnD-1C-cSZ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <string key="keyEquivalent">u</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="QR7-9x-YVg"/>
+                            <touchBarItem id="n6B-np-Fql">
+                                <viewController key="viewController" id="b9r-ST-Qvf">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KR3-nW-Cfx">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="Photo" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YcC-hq-eoG">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <string key="keyEquivalent">u</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="gjr-tE-RDk">
+                                <viewController key="viewController" id="nkR-tS-Tl5">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dze-oc-Woh">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="Table" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZuQ-YU-878">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <string key="keyEquivalent">u</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="KiB-mJ-FxD">
+                                <viewController key="viewController" id="Esp-fP-gjM">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="agY-uK-zlB">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="Equation" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hsc-A2-INy">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <string key="keyEquivalent">u</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
                     <connections>
                         <segue destination="Wgb-ee-1nB" kind="relationship" relationship="window.shadowedContentViewController" id="R0r-sH-GDJ"/>
                     </connections>
@@ -747,7 +834,7 @@
                     </splitView>
                 </splitViewController>
             </objects>
-            <point key="canvasLocation" x="74" y="704"/>
+            <point key="canvasLocation" x="74" y="722"/>
         </scene>
         <!--Sidebar View Controller-->
         <scene sceneID="cCu-TP-mMt">
@@ -762,7 +849,7 @@
                 </viewController>
                 <customObject id="d0U-Gp-a9i" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242" y="1060"/>
+            <point key="canvasLocation" x="-241" y="1087"/>
         </scene>
         <!--Document View Controller-->
         <scene sceneID="is5-bK-fMD">
@@ -779,7 +866,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="435" height="261"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView verticallyResizable="YES" findStyle="bar" allowsDocumentBackgroundColorChange="YES" allowsUndo="YES" spellingCorrection="YES" smartInsertDelete="YES" id="bA0-yo-JFo">
+                                        <textView verticallyResizable="YES" findStyle="bar" allowsCharacterPickerTouchBarItem="NO" allowsDocumentBackgroundColorChange="YES" allowsUndo="YES" textCompletion="NO" spellingCorrection="YES" smartInsertDelete="YES" id="bA0-yo-JFo">
                                             <rect key="frame" x="0.0" y="0.0" width="435" height="261"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -818,7 +905,7 @@
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="74" y="1060"/>
+            <point key="canvasLocation" x="74" y="1087"/>
         </scene>
         <!--Inspector View Controller-->
         <scene sceneID="040-zk-bB1">
@@ -831,7 +918,7 @@
                 </viewController>
                 <customObject id="dEb-3K-8xH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="450" y="1060"/>
+            <point key="canvasLocation" x="451" y="1087"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="ymK-Ek-xby">
@@ -942,8 +1029,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bold" width="8" height="9"/>
+        <image name="Equation" width="17" height="10"/>
         <image name="Export" width="12" height="15"/>
         <image name="Import" width="12" height="14"/>
+        <image name="Italic" width="7" height="9"/>
+        <image name="Photo" width="15" height="12"/>
         <image name="SidebarLeft" width="15" height="12"/>
+        <image name="Table" width="15" height="12"/>
+        <image name="Underline" width="8" height="12"/>
     </resources>
 </document>
