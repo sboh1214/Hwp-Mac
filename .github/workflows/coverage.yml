@@ -1,0 +1,27 @@
+name: Coverage
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: CocoaPods
+      run: pod install
+    - name: Slather
+      run: gem install slather
+    - name: Test & publish code coverage
+      uses: paambaati/codeclimate-action@v2.7.4
+      env:
+        CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+      with:
+        coverageCommand: slather coverage -s --scheme HwpMac --workspace HwpMac.xcworkspace HwpMac.xcodeproj
+        coverageLocations: |
+          ${{github.workspace}}/coverage.json:json
