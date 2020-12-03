@@ -12,21 +12,19 @@ class MainSplitVC: NSSplitViewController {
         splitView.autosaveName = NSSplitView.AutosaveName(splitViewResorationIdentifier)
         splitView.identifier = NSUserInterfaceItemIdentifier(rawValue: splitViewResorationIdentifier)
 
-        guard let vcLeft = storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Sidebar View")) as? NSViewController else {
+        guard let vcLeft = storyboard!.instantiate(View.sidebar) as? NSViewController else {
             return
         }
-        guard let vcMiddle = storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Document View")) as? NSViewController else {
+        guard let vcMiddle = storyboard!.instantiate(View.document) as? NSViewController else {
             return
         }
-        guard let vcRight = storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Inspector View")) as? NSViewController else {
+        guard let vcRight = storyboard!.instantiate(View.inspector) as? NSViewController else {
             return
         }
 
         let sidebarItem = NSSplitViewItem(viewController: vcLeft)
         sidebarItem.canCollapse = false
 
-        // I'm not sure about this line. I've commented it out. Will explore later
-        // sidebarItem.holdingPriority = NSLayoutConstraint.Priority(NSLayoutConstraint.Priority.defaultLow.rawValue + 1)
         addSplitViewItem(sidebarItem)
 
         let mainItem = NSSplitViewItem(viewController: vcMiddle)

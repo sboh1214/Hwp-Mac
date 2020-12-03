@@ -11,7 +11,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     }
 
-    lazy var preferenceController = NSStoryboard(name: "Preference", bundle: nil).instantiateController(withIdentifier: "Preference View")
+    lazy var preferenceController = NSStoryboard(name: "Preference", bundle: nil).instantiate(View.preference)
             as? NSWindowController
 
     @IBAction func clickMenuPreference(_ sender: Any) {
