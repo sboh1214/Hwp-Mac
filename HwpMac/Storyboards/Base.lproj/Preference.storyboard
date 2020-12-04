@@ -30,12 +30,12 @@
                             <touchBarItem id="6Ct-ML-J4p">
                                 <viewController key="viewController" id="NLd-uV-eoR">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ro6-dB-vqV">
-                                        <rect key="frame" x="0.0" y="0.0" width="202" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="30"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="Dfv-2s-Zer">
                                             <font key="font" metaFont="system"/>
                                             <segments>
-                                                <segment label="Theme" width="90"/>
-                                                <segment label="Shortcuts" width="90" selected="YES" tag="1"/>
+                                                <segment label="General"/>
+                                                <segment label="Key Bindings" selected="YES" tag="1"/>
                                             </segments>
                                         </segmentedCell>
                                     </segmentedControl>
@@ -83,8 +83,8 @@
             <objects>
                 <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="8QF-BK-wdk" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem identifier="" id="qRS-zw-MqM"/>
-                        <tabViewItem identifier="" image="Keyboard" id="W7o-pd-Aqg"/>
+                        <tabViewItem label="General" identifier="" image="General" id="qRS-zw-MqM"/>
+                        <tabViewItem label="Key Bindings" identifier="" image="Keyboard" id="W7o-pd-Aqg"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="PBL-I9-puK">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="1484" y="818"/>
         </scene>
-        <!--Theme-->
+        <!--General-->
         <scene sceneID="iss-f3-FVr">
             <objects>
-                <viewController title="Theme" id="g2S-Ku-vCr" sceneMemberID="viewController">
+                <viewController title="General" id="g2S-Ku-vCr" sceneMemberID="viewController">
                     <view key="view" id="baD-cf-1uC">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -117,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="1261" y="1333"/>
         </scene>
-        <!--Shortcuts-->
+        <!--Key Bindings-->
         <scene sceneID="gp2-wh-8BA">
             <objects>
-                <viewController title="Shortcuts" id="QuF-GK-KOy" sceneMemberID="viewController">
+                <viewController title="Key Bindings" id="QuF-GK-KOy" sceneMemberID="viewController">
                     <view key="view" id="ytB-LK-DSt">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -132,6 +132,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="General" width="14" height="14"/>
         <image name="Keyboard" width="16" height="10"/>
     </resources>
 </document>
