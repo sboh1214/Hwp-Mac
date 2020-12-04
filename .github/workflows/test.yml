@@ -18,7 +18,7 @@ jobs:
     - name: Test
       run: xcodebuild test -workspace HwpMac.xcworkspace -scheme HwpMac -enableCodeCoverage YES -resultBundlePath HwpMac.xcresult | xcpretty
     - name: Report
-      run: xcrun xccov view --report --json HwpMac.xcresult > coverage.json 
+      run: xcrun xccov view --report --json HwpMac.xcresult 1> coverage.json 2> /dev/null
     - name: Upload code coverage
       uses: paambaati/codeclimate-action@v2.7.4
       env:
