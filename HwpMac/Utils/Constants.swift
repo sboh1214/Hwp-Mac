@@ -1,5 +1,10 @@
 import Cocoa
 
+final class Storyboard {
+    static let main = NSStoryboard("Main")
+    static let preference = NSStoryboard("Preference")
+}
+
 final class Window {
     static let document = NSStoryboard.SceneIdentifier("Document Window Controller")
 }

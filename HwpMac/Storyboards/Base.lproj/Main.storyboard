@@ -124,6 +124,10 @@
                                                 <action selector="print:" target="Ady-hI-5gd" id="qaZ-4w-aoO"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="KRG-Sq-3L3"/>
+                                        <menuItem title="Document Information..." id="KJa-GQ-g4J">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>

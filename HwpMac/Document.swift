@@ -13,7 +13,7 @@ class Document: NSDocument {
 
     override func makeWindowControllers() {
         // Returns the Storyboard that contains your Document window.
-        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
+        let storyboard = Storyboard.main
         let windowController = storyboard.instantiate(Window.document) as? NSWindowController
         if let controller = windowController {
             self.addWindowController(controller)
