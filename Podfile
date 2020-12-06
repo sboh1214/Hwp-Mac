@@ -9,6 +9,7 @@ target 'HwpMac' do
   pod 'RxSwift', '6.0.0-rc.2'
   pod 'RxCocoa', '6.0.0-rc.2'
 
+  pod 'Alamofire', '5.4.0'
   pod 'Defaults', '4.1.0'
   pod 'KeyboardShortcuts', '0.6.0'
 
