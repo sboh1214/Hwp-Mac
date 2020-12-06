@@ -1,0 +1,9 @@
+
+/* Class = "NSToolbarItem"; label = "Shortcuts"; ObjectID = "51c-5x-Wla"; */
+"51c-5x-Wla.label" = "단축키";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Shortcuts"; ObjectID = "51c-5x-Wla"; */
+"51c-5x-Wla.paletteLabel" = "단축키";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "9Wl-A8-dRe"; */
+"9Wl-A8-dRe.title" = "설정";

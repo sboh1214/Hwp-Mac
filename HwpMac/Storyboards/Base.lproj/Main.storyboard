@@ -2,10 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="17008"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
-        <capability name="Search Toolbar Item" minToolsVersion="12.0" minSystemVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -25,11 +27,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
-                                            <connections>
-                                                <segue destination="PLp-T2-OIy" kind="show" id="CaS-0e-Ogc"/>
-                                            </connections>
-                                        </menuItem>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Services" id="NMo-om-nkz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -121,6 +119,10 @@
                                             <connections>
                                                 <action selector="print:" target="Ady-hI-5gd" id="qaZ-4w-aoO"/>
                                             </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="KRG-Sq-3L3"/>
+                                        <menuItem title="Document Information..." id="KJa-GQ-g4J">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                         </menuItem>
                                     </items>
                                 </menu>
@@ -684,11 +686,15 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="HwpMac" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="HwpMac" customModuleProvider="target">
+                    <connections>
+                        <outlet property="preferencesMenu" destination="BOF-NM-1cW" id="kqw-2r-MYz"/>
+                    </connections>
+                </customObject>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="-78"/>
+            <point key="canvasLocation" x="75" y="-3"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="shH-DZ-1Vk">
@@ -705,10 +711,7 @@
                         </view>
                         <toolbar key="toolbar" implicitIdentifier="1BA6C9FA-BD49-4F94-846C-5CA4E9633F41" displayMode="iconAndLabel" sizeMode="regular" id="Ez6-UR-2DE">
                             <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="BECC8116-B88E-4FC1-B3B3-2CB068779DE1" label="Sidebar" paletteLabel="Sidebar" tag="-1" image="SidebarLeft" navigational="YES" id="cOg-ss-kr9">
-                                    <size key="minSize" width="28" height="22"/>
-                                    <size key="maxSize" width="28" height="22"/>
-                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="BECC8116-B88E-4FC1-B3B3-2CB068779DE1" label="Sidebar" paletteLabel="Sidebar" tag="-1" image="SidebarLeft" sizingBehavior="auto" navigational="YES" id="cOg-ss-kr9"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="Piq-ZI-rgQ"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="MNI-ZV-mBD"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="hNa-UF-WUe"/>
@@ -728,6 +731,96 @@
                             <outlet property="delegate" destination="4vk-mm-a4h" id="8r0-fP-cRk"/>
                         </connections>
                     </window>
+                    <touchBar key="touchBar" id="sCj-jF-1Vd">
+                        <touchBarItems>
+                            <touchBarItem id="IYx-ue-XRe">
+                                <viewController key="viewController" id="SFw-HN-ZVa">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pwn-H5-J8m">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NbB-O6-oq5">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <imageReference key="image" image="Bold" symbolScale="large"/>
+                                            <string key="keyEquivalent">b</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="EV8-Ea-eT0">
+                                <viewController key="viewController" id="CwK-GQ-hoJ">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z9I-ta-C5u">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="Italic" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aG6-HT-Fr1">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">i</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="fe3-rU-ft2">
+                                <viewController key="viewController" id="Xi8-R9-xs5">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PlL-G6-AiG">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="Underline" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KnD-1C-cSZ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">u</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="QR7-9x-YVg"/>
+                            <touchBarItem id="n6B-np-Fql">
+                                <viewController key="viewController" id="b9r-ST-Qvf">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KR3-nW-Cfx">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="Photo" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YcC-hq-eoG">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">u</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="gjr-tE-RDk">
+                                <viewController key="viewController" id="nkR-tS-Tl5">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dze-oc-Woh">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="Table" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZuQ-YU-878">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">u</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="KiB-mJ-FxD">
+                                <viewController key="viewController" id="Esp-fP-gjM">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="agY-uK-zlB">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="Equation" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hsc-A2-INy">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">u</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
                     <connections>
                         <segue destination="Wgb-ee-1nB" kind="relationship" relationship="window.shadowedContentViewController" id="R0r-sH-GDJ"/>
                     </connections>
@@ -736,23 +829,23 @@
             </objects>
             <point key="canvasLocation" x="74" y="282"/>
         </scene>
-        <!--Main Split View Controller-->
+        <!--Main SplitVC-->
         <scene sceneID="b2i-Zr-MKJ">
             <objects>
                 <customObject id="cP0-dx-KXt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <splitViewController id="Wgb-ee-1nB" customClass="MainSplitViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="Wgb-ee-1nB" customClass="MainSplitVC" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="eXx-rx-PfT">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </splitView>
                 </splitViewController>
             </objects>
-            <point key="canvasLocation" x="74" y="704"/>
+            <point key="canvasLocation" x="74" y="722"/>
         </scene>
-        <!--Sidebar View Controller-->
+        <!--SidebarVC-->
         <scene sceneID="cCu-TP-mMt">
             <objects>
-                <viewController storyboardIdentifier="Sidebar View" id="xzk-8R-yJ5" customClass="SidebarViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sidebar View" id="xzk-8R-yJ5" customClass="SidebarVC" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="6gs-8z-kpP">
                         <rect key="frame" x="0.0" y="0.0" width="149" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -762,13 +855,13 @@
                 </viewController>
                 <customObject id="d0U-Gp-a9i" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242" y="1060"/>
+            <point key="canvasLocation" x="-241" y="1087"/>
         </scene>
-        <!--Document View Controller-->
+        <!--DocumentVC-->
         <scene sceneID="is5-bK-fMD">
             <objects>
                 <customObject id="b9I-Ra-VSk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="Document View" id="1ov-dW-WgX" customClass="DocumentViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Document View" id="1ov-dW-WgX" customClass="DocumentVC" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Ei3-r9-ea2">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -779,7 +872,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="435" height="261"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView verticallyResizable="YES" findStyle="bar" allowsDocumentBackgroundColorChange="YES" allowsUndo="YES" spellingCorrection="YES" smartInsertDelete="YES" id="bA0-yo-JFo">
+                                        <textView verticallyResizable="YES" findStyle="bar" allowsCharacterPickerTouchBarItem="NO" allowsDocumentBackgroundColorChange="YES" allowsUndo="YES" textCompletion="NO" spellingCorrection="YES" smartInsertDelete="YES" id="bA0-yo-JFo">
                                             <rect key="frame" x="0.0" y="0.0" width="435" height="261"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -818,12 +911,12 @@
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="74" y="1060"/>
+            <point key="canvasLocation" x="74" y="1087"/>
         </scene>
-        <!--Inspector View Controller-->
+        <!--InspectorVC-->
         <scene sceneID="040-zk-bB1">
             <objects>
-                <viewController storyboardIdentifier="Inspector View" id="Vmr-aC-iTt" customClass="InspectorViewController" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Inspector View" id="Vmr-aC-iTt" customClass="InspectorVC" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="o0f-QN-Q06">
                         <rect key="frame" x="0.0" y="0.0" width="270" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -831,119 +924,16 @@
                 </viewController>
                 <customObject id="dEb-3K-8xH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="450" y="1060"/>
-        </scene>
-        <!--Window Controller-->
-        <scene sceneID="ymK-Ek-xby">
-            <objects>
-                <windowController showSeguePresentationStyle="single" id="PLp-T2-OIy" sceneMemberID="viewController">
-                    <window key="window" title="Preference" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" toolbarStyle="unified" id="AI3-HY-88z">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" fullSizeContentView="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="245" y="301" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
-                        <view key="contentView" id="Fus-9B-C5C">
-                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </view>
-                        <toolbar key="toolbar" implicitIdentifier="09D11707-F4A3-4FD5-970E-AC5832E91C2B" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="SyG-BJ-VHh">
-                            <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="442A5441-947E-4B78-86A4-80FBC9430CF2" label="Import" paletteLabel="Import" tag="-1" image="Import" id="OwO-HC-8uP">
-                                    <size key="minSize" width="19" height="22"/>
-                                    <size key="maxSize" width="19" height="22"/>
-                                </toolbarItem>
-                                <toolbarItem implicitItemIdentifier="17852155-429F-44DE-BC72-39B8BB2246FE" label="Export" paletteLabel="Export" tag="-1" image="Export" id="YD2-w6-7h4">
-                                    <size key="minSize" width="18" height="22"/>
-                                    <size key="maxSize" width="18" height="22"/>
-                                </toolbarItem>
-                                <searchToolbarItem implicitItemIdentifier="DA29BB6E-E1FC-4765-AAAE-22C3A6B554CA" label="Search" paletteLabel="Search" visibilityPriority="1001" id="3a7-l7-6Kt">
-                                    <nil key="toolTip"/>
-                                    <searchField key="view" verticalHuggingPriority="750" textCompletion="NO" id="VUX-vX-EWd">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="21"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" id="E35-qH-E8O">
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </searchFieldCell>
-                                    </searchField>
-                                </searchToolbarItem>
-                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="LfE-Ck-Acm"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="jQ3-b4-LiY"/>
-                            </allowedToolbarItems>
-                            <defaultToolbarItems>
-                                <toolbarItem reference="OwO-HC-8uP"/>
-                                <toolbarItem reference="YD2-w6-7h4"/>
-                                <searchToolbarItem reference="3a7-l7-6Kt"/>
-                            </defaultToolbarItems>
-                        </toolbar>
-                        <connections>
-                            <outlet property="delegate" destination="PLp-T2-OIy" id="dyy-LN-Hj5"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="QGM-dz-BBv" kind="relationship" relationship="window.shadowedContentViewController" id="ugU-CI-Bkk"/>
-                    </connections>
-                </windowController>
-                <customObject id="KbC-23-69Q" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="864" y="282"/>
-        </scene>
-        <!--Split View Controller-->
-        <scene sceneID="g3O-ju-4oh">
-            <objects>
-                <splitViewController id="QGM-dz-BBv" sceneMemberID="viewController">
-                    <splitViewItems>
-                        <splitViewItem canCollapse="YES" holdingPriority="260" behavior="sidebar" id="68h-UW-j0J"/>
-                        <splitViewItem id="Awj-ib-pO1"/>
-                    </splitViewItems>
-                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="qXS-LV-fkJ">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </splitView>
-                    <connections>
-                        <segue destination="KRM-DN-zIP" kind="relationship" relationship="splitItems" id="dHc-gz-Xor"/>
-                        <segue destination="Px6-KM-twA" kind="relationship" relationship="splitItems" id="fZr-zp-kQy"/>
-                    </connections>
-                </splitViewController>
-                <customObject id="FIM-Rn-dLM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="864" y="704"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="8bg-ho-Rt8">
-            <objects>
-                <viewController id="KRM-DN-zIP" sceneMemberID="viewController">
-                    <view key="view" id="fIL-zs-te3">
-                        <rect key="frame" x="0.0" y="0.0" width="149" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <viewLayoutGuide key="safeArea" id="uFJ-7h-Ijc"/>
-                        <viewLayoutGuide key="layoutMargins" id="yDt-0A-osO"/>
-                    </view>
-                </viewController>
-                <customObject id="cCL-q2-wmU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="714" y="1135"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="8Ft-9A-G5L">
-            <objects>
-                <viewController id="Px6-KM-twA" sceneMemberID="viewController">
-                    <view key="view" id="Ofm-O4-rDQ">
-                        <rect key="frame" x="0.0" y="0.0" width="302" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <viewLayoutGuide key="safeArea" id="eGg-un-65F"/>
-                        <viewLayoutGuide key="layoutMargins" id="jGC-7s-uSa"/>
-                    </view>
-                </viewController>
-                <customObject id="73X-hX-X7O" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="985" y="1135"/>
+            <point key="canvasLocation" x="451" y="1087"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Export" width="12" height="15"/>
-        <image name="Import" width="12" height="14"/>
+        <image name="Bold" width="8" height="9"/>
+        <image name="Equation" width="17" height="10"/>
+        <image name="Italic" width="7" height="9"/>
+        <image name="Photo" width="15" height="12"/>
         <image name="SidebarLeft" width="15" height="12"/>
+        <image name="Table" width="15" height="12"/>
+        <image name="Underline" width="8" height="12"/>
     </resources>
 </document>

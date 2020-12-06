@@ -14,10 +14,14 @@
 		36113456257684AF004B6C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36113454257684AF004B6C12 /* Main.storyboard */; };
 		36113462257684AF004B6C12 /* HwpMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36113461257684AF004B6C12 /* HwpMacTests.swift */; };
 		3611346D257684AF004B6C12 /* HwpMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611346C257684AF004B6C12 /* HwpMacUITests.swift */; };
-		366A911F257696030007A5F0 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A911E257696030007A5F0 /* SidebarViewController.swift */; };
-		36F875EE257748EB00346D64 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875ED257748EB00346D64 /* DocumentViewController.swift */; };
-		36F875F32577492300346D64 /* InspectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F22577492300346D64 /* InspectorViewController.swift */; };
-		36F875F82577496500346D64 /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F72577496500346D64 /* MainSplitViewController.swift */; };
+		3622FDF1257CAABF00E15B1C /* ShortcutsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */; };
+		3633B31F257878DC0058A21E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633B31E257878DC0058A21E /* Constants.swift */; };
+		3633B32525787AC40058A21E /* NSStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */; };
+		366A911F257696030007A5F0 /* SidebarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A911E257696030007A5F0 /* SidebarVC.swift */; };
+		36C5DCAF25787DBA00DB9083 /* Preference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C5DCB125787DBA00DB9083 /* Preference.storyboard */; };
+		36F875EE257748EB00346D64 /* DocumentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875ED257748EB00346D64 /* DocumentVC.swift */; };
+		36F875F32577492300346D64 /* InspectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F22577492300346D64 /* InspectorVC.swift */; };
+		36F875F82577496500346D64 /* MainSplitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F72577496500346D64 /* MainSplitVC.swift */; };
 		5C9A9162C630E8FEB3A5ED00 /* Pods_HwpMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747EC856FA68AFA2389602AE /* Pods_HwpMacTests.framework */; };
 		B600B52D85B90F05F63057E3 /* Pods_HwpMac_HwpMacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E9AA27B8382A08180095E6 /* Pods_HwpMac_HwpMacUITests.framework */; };
 /* End PBXBuildFile section */
@@ -54,10 +58,18 @@
 		36113468257684AF004B6C12 /* HwpMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HwpMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3611346C257684AF004B6C12 /* HwpMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HwpMacUITests.swift; sourceTree = "<group>"; };
 		3611346E257684AF004B6C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		366A911E257696030007A5F0 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
-		36F875ED257748EB00346D64 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
-		36F875F22577492300346D64 /* InspectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorViewController.swift; sourceTree = "<group>"; };
-		36F875F72577496500346D64 /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
+		3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsVC.swift; sourceTree = "<group>"; };
+		3633B31E257878DC0058A21E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		366A911E257696030007A5F0 /* SidebarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarVC.swift; sourceTree = "<group>"; };
+		36C5DCAE25787DAB00DB9083 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		36C5DCB025787DBA00DB9083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preference.storyboard; sourceTree = "<group>"; };
+		36C5DCB625787DBE00DB9083 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Preference.strings; sourceTree = "<group>"; };
+		36C5DCBA25787E3600DB9083 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		36C5DCBE25787E3600DB9083 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Preference.strings; sourceTree = "<group>"; };
+		36F875ED257748EB00346D64 /* DocumentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentVC.swift; sourceTree = "<group>"; };
+		36F875F22577492300346D64 /* InspectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorVC.swift; sourceTree = "<group>"; };
+		36F875F72577496500346D64 /* MainSplitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitVC.swift; sourceTree = "<group>"; };
 		42F8488A8D0A98C170E4E472 /* Pods_HwpMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HwpMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5019CD5D5F6DCB9DA8E52B /* Pods-HwpMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwpMac.release.xcconfig"; path = "Target Support Files/Pods-HwpMac/Pods-HwpMac.release.xcconfig"; sourceTree = "<group>"; };
 		747EC856FA68AFA2389602AE /* Pods_HwpMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HwpMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,13 +136,11 @@
 				3611344C257684AE004B6C12 /* AppDelegate.swift */,
 				36113450257684AE004B6C12 /* Document.swift */,
 				36113452257684AF004B6C12 /* Assets.xcassets */,
-				36113454257684AF004B6C12 /* Main.storyboard */,
+				3640DDEB2577DFC60010DAB3 /* Storyboards */,
+				3640DDE22577DE510010DAB3 /* Controller */,
 				36113457257684AF004B6C12 /* Info.plist */,
 				36113458257684AF004B6C12 /* HwpMac.entitlements */,
-				366A911E257696030007A5F0 /* SidebarViewController.swift */,
-				36F875ED257748EB00346D64 /* DocumentViewController.swift */,
-				36F875F22577492300346D64 /* InspectorViewController.swift */,
-				36F875F72577496500346D64 /* MainSplitViewController.swift */,
+				3633B32325787AA90058A21E /* Utils */,
 			);
 			path = HwpMac;
 			sourceTree = "<group>";
@@ -151,6 +161,36 @@
 				3611346E257684AF004B6C12 /* Info.plist */,
 			);
 			path = HwpMacUITests;
+			sourceTree = "<group>";
+		};
+		3633B32325787AA90058A21E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3633B31E257878DC0058A21E /* Constants.swift */,
+				3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3640DDE22577DE510010DAB3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				366A911E257696030007A5F0 /* SidebarVC.swift */,
+				36F875ED257748EB00346D64 /* DocumentVC.swift */,
+				36F875F22577492300346D64 /* InspectorVC.swift */,
+				36F875F72577496500346D64 /* MainSplitVC.swift */,
+				3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3640DDEB2577DFC60010DAB3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				36113454257684AF004B6C12 /* Main.storyboard */,
+				36C5DCB125787DBA00DB9083 /* Preference.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		A0675086768A588657A4E3EC /* Pods */ = {
@@ -184,6 +224,7 @@
 			buildConfigurationList = 36113471257684AF004B6C12 /* Build configuration list for PBXNativeTarget "HwpMac" */;
 			buildPhases = (
 				0FE3EC3B291BFCB4F6871E50 /* [CP] Check Pods Manifest.lock */,
+				36B82B3A2577E08E00204384 /* ShellScript */,
 				36113445257684AE004B6C12 /* Sources */,
 				36113446257684AE004B6C12 /* Frameworks */,
 				36113447257684AE004B6C12 /* Resources */,
@@ -266,6 +307,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 36113440257684AE004B6C12;
 			productRefGroup = 3611344A257684AE004B6C12 /* Products */;
@@ -286,6 +328,7 @@
 			files = (
 				36113453257684AF004B6C12 /* Assets.xcassets in Resources */,
 				36113456257684AF004B6C12 /* Main.storyboard in Resources */,
+				36C5DCAF25787DBA00DB9083 /* Preference.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +370,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		36B82B3A2577E08E00204384 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		8C32A8251A050E92EA1C32BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -413,12 +473,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F875F32577492300346D64 /* InspectorViewController.swift in Sources */,
+				36F875F32577492300346D64 /* InspectorVC.swift in Sources */,
+				3633B32525787AC40058A21E /* NSStoryboard+Extension.swift in Sources */,
 				3611344D257684AE004B6C12 /* AppDelegate.swift in Sources */,
-				36F875F82577496500346D64 /* MainSplitViewController.swift in Sources */,
-				36F875EE257748EB00346D64 /* DocumentViewController.swift in Sources */,
+				3622FDF1257CAABF00E15B1C /* ShortcutsVC.swift in Sources */,
+				36F875F82577496500346D64 /* MainSplitVC.swift in Sources */,
+				36F875EE257748EB00346D64 /* DocumentVC.swift in Sources */,
+				3633B31F257878DC0058A21E /* Constants.swift in Sources */,
 				36113451257684AE004B6C12 /* Document.swift in Sources */,
-				366A911F257696030007A5F0 /* SidebarViewController.swift in Sources */,
+				366A911F257696030007A5F0 /* SidebarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,8 +521,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				36113455257684AF004B6C12 /* Base */,
+				36C5DCAE25787DAB00DB9083 /* en */,
+				36C5DCBA25787E3600DB9083 /* ko */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36C5DCB125787DBA00DB9083 /* Preference.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36C5DCB025787DBA00DB9083 /* Base */,
+				36C5DCB625787DBE00DB9083 /* en */,
+				36C5DCBE25787E3600DB9083 /* ko */,
+			);
+			name = Preference.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -469,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -516,6 +592,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -529,6 +606,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -570,6 +648,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -585,6 +664,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HwpMac/HwpMac.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 86Z79M22CQ;
@@ -595,6 +675,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.sboh.HwpMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -608,6 +689,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HwpMac/HwpMac.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 86Z79M22CQ;
@@ -618,6 +700,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.sboh.HwpMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -639,7 +722,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.sboh.HwpMacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -662,7 +745,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.sboh.HwpMacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

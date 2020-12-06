@@ -1,4 +1,4 @@
-name: Build
+name: Test
 
 on:
   push:
@@ -15,5 +15,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: CocoaPods
       run: pod install
-    - name: Build
-      run: xcodebuild -workspace HwpMac.xcworkspace -scheme HwpMac | xcpretty
+    - name: Test
+      run: xcodebuild test -workspace HwpMac.xcworkspace -scheme HwpMac -enableCodeCoverage YES -resultBundlePath HwpMac.xcresult | xcpretty

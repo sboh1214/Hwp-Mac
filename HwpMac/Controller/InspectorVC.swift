@@ -7,11 +7,11 @@
 
 import Cocoa
 
-class InspectorViewController: NSViewController {
+class InspectorVC: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
-    
+
 }

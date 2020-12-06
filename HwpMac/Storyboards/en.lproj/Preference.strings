@@ -1,0 +1,9 @@
+
+/* Class = "NSToolbarItem"; label = "Shortcuts"; ObjectID = "51c-5x-Wla"; */
+"51c-5x-Wla.label" = "Shortcuts";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Shortcuts"; ObjectID = "51c-5x-Wla"; */
+"51c-5x-Wla.paletteLabel" = "Shortcuts";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "9Wl-A8-dRe"; */
+"9Wl-A8-dRe.title" = "Preferences";

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="17008"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="T8I-Mc-xeb">
+            <objects>
+                <windowController storyboardIdentifier="Preference View" showSeguePresentationStyle="single" id="AES-O0-Fs9" sceneMemberID="viewController">
+                    <window key="window" title="Preference" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" toolbarStyle="preference" id="w6n-aa-UC2">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="245" y="301" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
+                        <view key="contentView" id="Ciy-4a-Aoe">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="AES-O0-Fs9" id="Fe1-hU-k1T"/>
+                        </connections>
+                    </window>
+                    <touchBar key="touchBar" id="frL-Bj-EPc">
+                        <touchBarItems>
+                            <touchBarItem id="6Ct-ML-J4p">
+                                <viewController key="viewController" id="NLd-uV-eoR">
+                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ro6-dB-vqV">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="Dfv-2s-Zer">
+                                            <font key="font" metaFont="system"/>
+                                            <segments>
+                                                <segment label="General"/>
+                                                <segment label="Shortcuts" selected="YES" tag="1"/>
+                                            </segments>
+                                        </segmentedCell>
+                                    </segmentedControl>
+                                </viewController>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
+                    <connections>
+                        <segue destination="iEW-9J-DAV" kind="relationship" relationship="window.shadowedContentViewController" id="VH4-Fq-bez"/>
+                    </connections>
+                </windowController>
+                <customObject id="PZH-T2-RS1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1484" y="-22"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wH4-I7-ewl">
+            <objects>
+                <viewController id="iEW-9J-DAV" sceneMemberID="viewController">
+                    <view key="view" id="jll-yX-byt">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="m75-Tc-AN7">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <connections>
+                                    <segue destination="8QF-BK-wdk" kind="embed" id="Am0-oB-oPk"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m75-Tc-AN7" secondAttribute="trailing" id="AGt-W9-vZs"/>
+                            <constraint firstAttribute="bottom" secondItem="m75-Tc-AN7" secondAttribute="bottom" id="TJv-GC-uSE"/>
+                            <constraint firstItem="m75-Tc-AN7" firstAttribute="top" secondItem="jll-yX-byt" secondAttribute="top" id="a0j-24-O5f"/>
+                            <constraint firstItem="m75-Tc-AN7" firstAttribute="leading" secondItem="jll-yX-byt" secondAttribute="leading" id="fdG-Ma-2TR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="Vby-8W-wQT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1484" y="416"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="mb3-yu-iwf">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="8QF-BK-wdk" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem label="General" identifier="" image="General" id="qRS-zw-MqM"/>
+                        <tabViewItem label="Shortcuts" image="Keyboard" id="vt3-Yx-Q1V"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="PBL-I9-puK">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <connections>
+                            <outlet property="delegate" destination="8QF-BK-wdk" id="8yv-JL-gy6"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="PBL-I9-puK" id="7X5-Nb-C0y"/>
+                        <segue destination="g2S-Ku-vCr" kind="relationship" relationship="tabItems" id="ozw-us-CB0"/>
+                        <segue destination="TGW-yj-HHS" kind="relationship" relationship="tabItems" id="kNB-16-ei5"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="qip-FR-UHm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1484" y="818"/>
+        </scene>
+        <!--General-->
+        <scene sceneID="iss-f3-FVr">
+            <objects>
+                <viewController title="General" id="g2S-Ku-vCr" sceneMemberID="viewController">
+                    <view key="view" id="baD-cf-1uC">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HLI-3a-EcW">
+                                <rect key="frame" x="18" y="264" width="46" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Theme" id="o2I-Dv-uXc">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pJu-Oa-dUR">
+                                <rect key="frame" x="157" y="258" width="131" height="25"/>
+                                <popUpButtonCell key="cell" type="push" title="System Setting" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Xq1-Az-Emr" id="zn0-8W-y3C">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="S30-ad-3xa">
+                                        <items>
+                                            <menuItem title="System Setting" state="on" id="Xq1-Az-Emr"/>
+                                            <menuItem title="Light" id="4RB-Cb-jCm"/>
+                                            <menuItem title="Dark" id="Hh0-6t-1zg"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="HLI-3a-EcW" firstAttribute="leading" secondItem="baD-cf-1uC" secondAttribute="leading" constant="20" symbolic="YES" id="27v-mk-y01"/>
+                            <constraint firstItem="HLI-3a-EcW" firstAttribute="top" secondItem="baD-cf-1uC" secondAttribute="top" constant="20" symbolic="YES" id="96j-gq-DWj"/>
+                            <constraint firstItem="pJu-Oa-dUR" firstAttribute="leading" secondItem="baD-cf-1uC" secondAttribute="leading" constant="160" id="nXV-Yb-cis"/>
+                            <constraint firstItem="pJu-Oa-dUR" firstAttribute="centerY" secondItem="HLI-3a-EcW" secondAttribute="centerY" id="plA-8a-9bI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="jDv-hU-YZu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="1333"/>
+        </scene>
+        <!--Shortcuts-->
+        <scene sceneID="WCr-h4-WYa">
+            <objects>
+                <viewController title="Shortcuts" id="TGW-yj-HHS" customClass="ShortcutsVC" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="HVB-8m-tTA">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="bsj-27-6hP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1729" y="1333"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="General" width="14" height="14"/>
+        <image name="Keyboard" width="16" height="10"/>
+    </resources>
+</document>
