@@ -30,12 +30,12 @@
                             <touchBarItem id="6Ct-ML-J4p">
                                 <viewController key="viewController" id="NLd-uV-eoR">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ro6-dB-vqV">
-                                        <rect key="frame" x="0.0" y="0.0" width="169" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="Dfv-2s-Zer">
                                             <font key="font" metaFont="system"/>
                                             <segments>
                                                 <segment label="General"/>
-                                                <segment label="Key Bindings" selected="YES" tag="1"/>
+                                                <segment label="Shortcuts" selected="YES" tag="1"/>
                                             </segments>
                                         </segmentedCell>
                                     </segmentedControl>
@@ -84,7 +84,7 @@
                 <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="8QF-BK-wdk" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="General" identifier="" image="General" id="qRS-zw-MqM"/>
-                        <tabViewItem label="Key Bindings" identifier="" image="Keyboard" id="W7o-pd-Aqg"/>
+                        <tabViewItem label="Shortcuts" image="Keyboard" id="vt3-Yx-Q1V"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="PBL-I9-puK">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -97,7 +97,7 @@
                     <connections>
                         <outlet property="tabView" destination="PBL-I9-puK" id="7X5-Nb-C0y"/>
                         <segue destination="g2S-Ku-vCr" kind="relationship" relationship="tabItems" id="ozw-us-CB0"/>
-                        <segue destination="QuF-GK-KOy" kind="relationship" relationship="tabItems" id="O44-l3-X1P"/>
+                        <segue destination="TGW-yj-HHS" kind="relationship" relationship="tabItems" id="kNB-16-ei5"/>
                     </connections>
                 </tabViewController>
                 <customObject id="qip-FR-UHm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -111,24 +111,54 @@
                     <view key="view" id="baD-cf-1uC">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HLI-3a-EcW">
+                                <rect key="frame" x="18" y="264" width="46" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Theme" id="o2I-Dv-uXc">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pJu-Oa-dUR">
+                                <rect key="frame" x="157" y="258" width="131" height="25"/>
+                                <popUpButtonCell key="cell" type="push" title="System Setting" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Xq1-Az-Emr" id="zn0-8W-y3C">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="S30-ad-3xa">
+                                        <items>
+                                            <menuItem title="System Setting" state="on" id="Xq1-Az-Emr"/>
+                                            <menuItem title="Light" id="4RB-Cb-jCm"/>
+                                            <menuItem title="Dark" id="Hh0-6t-1zg"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="HLI-3a-EcW" firstAttribute="leading" secondItem="baD-cf-1uC" secondAttribute="leading" constant="20" symbolic="YES" id="27v-mk-y01"/>
+                            <constraint firstItem="HLI-3a-EcW" firstAttribute="top" secondItem="baD-cf-1uC" secondAttribute="top" constant="20" symbolic="YES" id="96j-gq-DWj"/>
+                            <constraint firstItem="pJu-Oa-dUR" firstAttribute="leading" secondItem="baD-cf-1uC" secondAttribute="leading" constant="160" id="nXV-Yb-cis"/>
+                            <constraint firstItem="pJu-Oa-dUR" firstAttribute="centerY" secondItem="HLI-3a-EcW" secondAttribute="centerY" id="plA-8a-9bI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="jDv-hU-YZu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1261" y="1333"/>
         </scene>
-        <!--Key Bindings-->
-        <scene sceneID="gp2-wh-8BA">
+        <!--Shortcuts-->
+        <scene sceneID="WCr-h4-WYa">
             <objects>
-                <viewController title="Key Bindings" id="QuF-GK-KOy" sceneMemberID="viewController">
-                    <view key="view" id="ytB-LK-DSt">
+                <viewController title="Shortcuts" id="TGW-yj-HHS" customClass="ShortcutsVC" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="HVB-8m-tTA">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="zoA-KY-AHQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="bsj-27-6hP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="1333"/>
+            <point key="canvasLocation" x="1729" y="1333"/>
         </scene>
     </scenes>
     <resources>

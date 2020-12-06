@@ -14,6 +14,7 @@
 		36113456257684AF004B6C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36113454257684AF004B6C12 /* Main.storyboard */; };
 		36113462257684AF004B6C12 /* HwpMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36113461257684AF004B6C12 /* HwpMacTests.swift */; };
 		3611346D257684AF004B6C12 /* HwpMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611346C257684AF004B6C12 /* HwpMacUITests.swift */; };
+		3622FDF1257CAABF00E15B1C /* ShortcutsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */; };
 		3633B31F257878DC0058A21E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633B31E257878DC0058A21E /* Constants.swift */; };
 		3633B32525787AC40058A21E /* NSStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */; };
 		366A911F257696030007A5F0 /* SidebarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A911E257696030007A5F0 /* SidebarVC.swift */; };
@@ -57,6 +58,7 @@
 		36113468257684AF004B6C12 /* HwpMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HwpMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3611346C257684AF004B6C12 /* HwpMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HwpMacUITests.swift; sourceTree = "<group>"; };
 		3611346E257684AF004B6C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsVC.swift; sourceTree = "<group>"; };
 		3633B31E257878DC0058A21E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		366A911E257696030007A5F0 /* SidebarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarVC.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				36F875ED257748EB00346D64 /* DocumentVC.swift */,
 				36F875F22577492300346D64 /* InspectorVC.swift */,
 				36F875F72577496500346D64 /* MainSplitVC.swift */,
+				3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				36F875F32577492300346D64 /* InspectorVC.swift in Sources */,
 				3633B32525787AC40058A21E /* NSStoryboard+Extension.swift in Sources */,
 				3611344D257684AE004B6C12 /* AppDelegate.swift in Sources */,
+				3622FDF1257CAABF00E15B1C /* ShortcutsVC.swift in Sources */,
 				36F875F82577496500346D64 /* MainSplitVC.swift in Sources */,
 				36F875EE257748EB00346D64 /* DocumentVC.swift in Sources */,
 				3633B31F257878DC0058A21E /* Constants.swift in Sources */,

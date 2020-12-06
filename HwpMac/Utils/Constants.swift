@@ -1,4 +1,5 @@
 import Cocoa
+import KeyboardShortcuts
 
 final class Storyboard {
     static let main = NSStoryboard("Main")
@@ -15,4 +16,8 @@ final class View {
     static let inspector = NSStoryboard.SceneIdentifier("Inspector View")
 
     static let preference = NSStoryboard.SceneIdentifier("Preference View")
+}
+
+extension KeyboardShortcuts.Name {
+    static let test = Self("test")
 }
