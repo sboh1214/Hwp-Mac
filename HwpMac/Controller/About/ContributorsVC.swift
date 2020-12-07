@@ -46,6 +46,7 @@ class ContributorsVC: NSViewController, NSTableViewDataSource, NSTableViewDelega
 
         if tableColumn == tableView.tableColumns[0] {
             text = item.login
+            image = NSImage(byReferencing: item.avatarUrl)
             cellIdentifier = CellIdentifiers.IdCell
         }
 
@@ -62,8 +63,8 @@ class ContributorsVC: NSViewController, NSTableViewDataSource, NSTableViewDelega
 struct User: Codable {
     let login: String
     let id: Int
-    let avatarUrl: String
-    let htmlUrl: String
+    let avatarUrl: URL
+    let htmlUrl: URL
     let contributions: Int
 }
 // swiftlint:enable identifier_name

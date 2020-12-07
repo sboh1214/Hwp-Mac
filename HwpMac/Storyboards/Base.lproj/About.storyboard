@@ -40,15 +40,15 @@
         <scene sceneID="cZc-KU-Sft">
             <objects>
                 <viewController id="82a-WL-Xh3" customClass="AboutVC" customModule="HwpMac" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="p23-Zm-TFN">
-                        <rect key="frame" x="0.0" y="0.0" width="590" height="410"/>
+                    <view key="view" id="p23-Zm-TFN">
+                        <rect key="frame" x="0.0" y="0.0" width="590" height="387"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ib-Ck-lfn">
-                                <rect key="frame" x="20" y="20" width="128" height="172"/>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="92" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" ambiguous="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ib-Ck-lfn">
+                                <rect key="frame" x="20" y="367" width="128" height="0.0"/>
                                 <subviews>
-                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nIf-Kq-FeP">
-                                        <rect key="frame" x="0.0" y="44" width="128" height="128"/>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nIf-Kq-FeP">
+                                        <rect key="frame" x="0.0" y="-128" width="128" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="6Vy-G4-gGM"/>
                                             <constraint firstAttribute="width" constant="128" id="ewi-8E-U2G"/>
@@ -68,7 +68,6 @@
                                     </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="nIf-Kq-FeP" firstAttribute="top" secondItem="4ib-Ck-lfn" secondAttribute="top" id="4Tf-Rc-Kba"/>
                                     <constraint firstItem="Bsx-d2-fRU" firstAttribute="centerX" secondItem="4ib-Ck-lfn" secondAttribute="centerX" id="6Ff-wu-2Xq"/>
                                     <constraint firstItem="nIf-Kq-FeP" firstAttribute="centerX" secondItem="4ib-Ck-lfn" secondAttribute="centerX" id="SOZ-U7-m00"/>
                                     <constraint firstItem="Bsx-d2-fRU" firstAttribute="top" secondItem="nIf-Kq-FeP" secondAttribute="bottom" constant="8" symbolic="YES" id="Tqk-Aj-mtA"/>
@@ -82,21 +81,20 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
-                            <containerView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2dW-2e-BuD">
-                                <rect key="frame" x="156" y="20" width="414" height="370"/>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="qMf-xn-X7t">
+                                <rect key="frame" x="156" y="20" width="414" height="347"/>
                                 <connections>
-                                    <segue destination="SmC-ln-Bdo" kind="embed" id="nru-nF-IQR"/>
+                                    <segue destination="SmC-ln-Bdo" kind="embed" id="vtb-hw-t04"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="2dW-2e-BuD" secondAttribute="trailing" constant="20" symbolic="YES" id="6o9-O7-k4j"/>
-                            <constraint firstAttribute="bottom" secondItem="2dW-2e-BuD" secondAttribute="bottom" constant="20" symbolic="YES" id="YnY-ac-r4I"/>
-                            <constraint firstItem="2dW-2e-BuD" firstAttribute="leading" secondItem="4ib-Ck-lfn" secondAttribute="trailing" constant="8" symbolic="YES" id="g5H-pe-HaZ"/>
-                            <constraint firstItem="4ib-Ck-lfn" firstAttribute="leading" secondItem="p23-Zm-TFN" secondAttribute="leading" constant="20" symbolic="YES" id="o2U-1E-y0O"/>
-                            <constraint firstAttribute="bottom" secondItem="4ib-Ck-lfn" secondAttribute="bottom" constant="20" symbolic="YES" id="pSQ-mb-2aL"/>
-                            <constraint firstItem="4ib-Ck-lfn" firstAttribute="top" secondItem="p23-Zm-TFN" secondAttribute="top" constant="20" symbolic="YES" id="raI-tg-CFi"/>
-                            <constraint firstItem="2dW-2e-BuD" firstAttribute="top" secondItem="p23-Zm-TFN" secondAttribute="top" constant="20" symbolic="YES" id="zhV-Qk-xIz"/>
+                            <constraint firstItem="4ib-Ck-lfn" firstAttribute="centerY" secondItem="p23-Zm-TFN" secondAttribute="centerY" id="S44-CT-IMb"/>
+                            <constraint firstItem="4ib-Ck-lfn" firstAttribute="leading" secondItem="p23-Zm-TFN" secondAttribute="leading" constant="20" symbolic="YES" id="U23-0t-5DV"/>
+                            <constraint firstItem="qMf-xn-X7t" firstAttribute="top" secondItem="p23-Zm-TFN" secondAttribute="top" constant="20" symbolic="YES" id="XtX-lm-B02"/>
+                            <constraint firstAttribute="trailing" secondItem="qMf-xn-X7t" secondAttribute="trailing" constant="20" symbolic="YES" id="bFu-nx-w4G"/>
+                            <constraint firstItem="qMf-xn-X7t" firstAttribute="leading" secondItem="4ib-Ck-lfn" secondAttribute="trailing" constant="8" symbolic="YES" id="uAP-Q0-31c"/>
+                            <constraint firstAttribute="bottom" secondItem="qMf-xn-X7t" secondAttribute="bottom" constant="20" symbolic="YES" id="y0q-fZ-9Ip"/>
                         </constraints>
                     </view>
                     <connections>
@@ -105,7 +103,7 @@
                 </viewController>
                 <customObject id="GIy-Kl-Gvr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="501"/>
+            <point key="canvasLocation" x="-1" y="588.5"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="b4f-ns-aew">
@@ -143,18 +141,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="458" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwp-87-SJR">
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" translatesAutoresizingMaskIntoConstraints="NO" id="rwp-87-SJR">
                                 <rect key="frame" x="19" y="20" width="420" height="260"/>
                                 <clipView key="contentView" drawsBackground="NO" id="3C6-hp-cxO">
-                                    <rect key="frame" x="0.0" y="0.0" width="405" height="260"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="405" height="245"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="axx-Xr-boX">
-                                            <rect key="frame" x="0.0" y="0.0" width="405" height="260"/>
+                                        <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" findStyle="bar" spellingCorrection="YES" smartInsertDelete="YES" id="axx-Xr-boX">
+                                            <rect key="frame" x="0.0" y="0.0" width="405" height="245"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="405" height="260"/>
+                                            <size key="minSize" width="405" height="245"/>
                                             <size key="maxSize" width="465" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -164,12 +162,12 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="420" id="ZK7-vm-7eU"/>
                                 </constraints>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="WjA-zf-UZ0">
-                                    <rect key="frame" x="-100" y="-100" width="225" height="15"/>
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="WjA-zf-UZ0">
+                                    <rect key="frame" x="0.0" y="245" width="405" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="R7x-Aj-k1q">
-                                    <rect key="frame" x="405" y="0.0" width="15" height="260"/>
+                                    <rect key="frame" x="405" y="0.0" width="15" height="245"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -241,7 +239,7 @@
                                                                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUF-Og-4S6">
                                                                     <rect key="frame" x="3" y="0.0" width="17" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" catalog="system" id="OXM-JJ-WI2"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="OXM-JJ-WI2"/>
                                                                 </imageView>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9GW-7j-A7B">
                                                                     <rect key="frame" x="25" y="0.0" width="89" height="17"/>
@@ -297,7 +295,7 @@
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="1aK-sj-5RC">
-                                    <rect key="frame" x="1" y="118" width="238" height="16"/>
+                                    <rect key="frame" x="1" y="244" width="408" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="g3a-WN-Q6h">
@@ -329,8 +327,8 @@
     <resources>
         <image name="Contributors" width="25" height="12"/>
         <image name="Credits" width="13" height="16"/>
-        <image name="License" width="11" height="14"/>
-        <image name="NSActionTemplate" catalog="system" width="15" height="15"/>
+        <image name="License" width="612" height="792"/>
+        <image name="NSActionTemplate" width="15" height="15"/>
         <image name="NSApplicationIcon" width="32" height="32"/>
     </resources>
 </document>

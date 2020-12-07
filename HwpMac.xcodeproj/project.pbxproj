@@ -273,6 +273,8 @@
 			dependencies = (
 			);
 			name = HwpMac;
+			packageProductDependencies = (
+			);
 			productName = HwpMac;
 			productReference = 36113449257684AE004B6C12 /* HwpMac.app */;
 			productType = "com.apple.product-type.application";
@@ -348,6 +350,8 @@
 				ko,
 			);
 			mainGroup = 36113440257684AE004B6C12;
+			packageReferences = (
+			);
 			productRefGroup = 3611344A257684AE004B6C12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
