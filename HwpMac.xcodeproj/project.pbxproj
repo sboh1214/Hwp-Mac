@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		36113462257684AF004B6C12 /* HwpMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36113461257684AF004B6C12 /* HwpMacTests.swift */; };
 		3611346D257684AF004B6C12 /* HwpMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611346C257684AF004B6C12 /* HwpMacUITests.swift */; };
 		3622FDF1257CAABF00E15B1C /* ShortcutsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */; };
+		362EC863258F856A00F614C9 /* CoreHwp in Frameworks */ = {isa = PBXBuildFile; productRef = 362EC862258F856A00F614C9 /* CoreHwp */; };
 		3633B31F257878DC0058A21E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633B31E257878DC0058A21E /* Constants.swift */; };
 		3633B32525787AC40058A21E /* NSStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */; };
 		366A911F257696030007A5F0 /* SidebarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A911E257696030007A5F0 /* SidebarVC.swift */; };
@@ -23,6 +24,7 @@
 		3687DCEC257CE38D00B2231D /* ContributorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3687DCEB257CE38D00B2231D /* ContributorsVC.swift */; };
 		3687DD00257CFD2500B2231D /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3687DD02257CFD2500B2231D /* About.storyboard */; };
 		36C5DCAF25787DBA00DB9083 /* Preference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C5DCB125787DBA00DB9083 /* Preference.storyboard */; };
+		36F60A87258F86C200741FB6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 36F60A86258F86C200741FB6 /* Alamofire */; };
 		36F875EE257748EB00346D64 /* DocumentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875ED257748EB00346D64 /* DocumentVC.swift */; };
 		36F875F32577492300346D64 /* InspectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F22577492300346D64 /* InspectorVC.swift */; };
 		36F875F82577496500346D64 /* MainSplitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F72577496500346D64 /* MainSplitVC.swift */; };
@@ -95,7 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F60A87258F86C200741FB6 /* Alamofire in Frameworks */,
 				1CB8FC5A3A89FA42A6B3DB51 /* Pods_HwpMac.framework in Frameworks */,
+				362EC863258F856A00F614C9 /* CoreHwp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +278,8 @@
 			);
 			name = HwpMac;
 			packageProductDependencies = (
+				362EC862258F856A00F614C9 /* CoreHwp */,
+				36F60A86258F86C200741FB6 /* Alamofire */,
 			);
 			productName = HwpMac;
 			productReference = 36113449257684AE004B6C12 /* HwpMac.app */;
@@ -351,6 +357,8 @@
 			);
 			mainGroup = 36113440257684AE004B6C12;
 			packageReferences = (
+				362EC861258F856A00F614C9 /* XCRemoteSwiftPackageReference "Hwp-Swift" */,
+				36F60A85258F86C200741FB6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 3611344A257684AE004B6C12 /* Products */;
 			projectDirPath = "";
@@ -891,6 +899,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		362EC861258F856A00F614C9 /* XCRemoteSwiftPackageReference "Hwp-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sboh1214/Hwp-Swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.9.0;
+			};
+		};
+		36F60A85258F86C200741FB6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		362EC862258F856A00F614C9 /* CoreHwp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 362EC861258F856A00F614C9 /* XCRemoteSwiftPackageReference "Hwp-Swift" */;
+			productName = CoreHwp;
+		};
+		36F60A86258F86C200741FB6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36F60A85258F86C200741FB6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36113441257684AE004B6C12 /* Project object */;
 }
