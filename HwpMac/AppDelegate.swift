@@ -3,6 +3,10 @@ import RxSwift
 import RxCocoa
 import KeyboardShortcuts
 
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
+
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
@@ -10,6 +14,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var preferencesMenu: NSMenuItem!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+
+        AppCenter.start(withAppSecret: "f869ccef-9952-4c7c-af83-aa91b308e130", services: [
+          Analytics.self,
+          Crashes.self
+        ])
 
         aboutMenu.rx.action.on(
             .next(#selector(openAboutWindow(_:)))

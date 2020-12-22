@@ -17,6 +17,8 @@
 		3611346D257684AF004B6C12 /* HwpMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611346C257684AF004B6C12 /* HwpMacUITests.swift */; };
 		3622FDF1257CAABF00E15B1C /* ShortcutsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */; };
 		362EC863258F856A00F614C9 /* CoreHwp in Frameworks */ = {isa = PBXBuildFile; productRef = 362EC862258F856A00F614C9 /* CoreHwp */; };
+		3632B58725922D6400CA23BF /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 3632B58625922D6400CA23BF /* AppCenterCrashes */; };
+		3632B58925922D6400CA23BF /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3632B58825922D6400CA23BF /* AppCenterAnalytics */; };
 		3633B31F257878DC0058A21E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633B31E257878DC0058A21E /* Constants.swift */; };
 		3633B32525787AC40058A21E /* NSStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */; };
 		366A911F257696030007A5F0 /* SidebarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A911E257696030007A5F0 /* SidebarVC.swift */; };
@@ -100,6 +102,8 @@
 				36F60A87258F86C200741FB6 /* Alamofire in Frameworks */,
 				1CB8FC5A3A89FA42A6B3DB51 /* Pods_HwpMac.framework in Frameworks */,
 				362EC863258F856A00F614C9 /* CoreHwp in Frameworks */,
+				3632B58925922D6400CA23BF /* AppCenterAnalytics in Frameworks */,
+				3632B58725922D6400CA23BF /* AppCenterCrashes in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +284,8 @@
 			packageProductDependencies = (
 				362EC862258F856A00F614C9 /* CoreHwp */,
 				36F60A86258F86C200741FB6 /* Alamofire */,
+				3632B58625922D6400CA23BF /* AppCenterCrashes */,
+				3632B58825922D6400CA23BF /* AppCenterAnalytics */,
 			);
 			productName = HwpMac;
 			productReference = 36113449257684AE004B6C12 /* HwpMac.app */;
@@ -359,6 +365,7 @@
 			packageReferences = (
 				362EC861258F856A00F614C9 /* XCRemoteSwiftPackageReference "Hwp-Swift" */,
 				36F60A85258F86C200741FB6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3632B58525922D6400CA23BF /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */,
 			);
 			productRefGroup = 3611344A257684AE004B6C12 /* Products */;
 			projectDirPath = "";
@@ -909,6 +916,14 @@
 				version = 0.9.0;
 			};
 		};
+		3632B58525922D6400CA23BF /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/appcenter-sdk-apple.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.1.0;
+			};
+		};
 		36F60A85258F86C200741FB6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -924,6 +939,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 362EC861258F856A00F614C9 /* XCRemoteSwiftPackageReference "Hwp-Swift" */;
 			productName = CoreHwp;
+		};
+		3632B58625922D6400CA23BF /* AppCenterCrashes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3632B58525922D6400CA23BF /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterCrashes;
+		};
+		3632B58825922D6400CA23BF /* AppCenterAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3632B58525922D6400CA23BF /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterAnalytics;
 		};
 		36F60A86258F86C200741FB6 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
