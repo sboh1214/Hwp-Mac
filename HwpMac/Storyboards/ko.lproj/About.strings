@@ -1,0 +1,27 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "1MC-EN-QoD"; */
+"1MC-EN-QoD.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "9Js-Fv-u2H"; */
+"9Js-Fv-u2H.title" = "Table View Cell";
+
+/* Class = "NSViewController"; title = "License"; ObjectID = "HD1-q8-nnc"; */
+"HD1-q8-nnc.title" = "라이센스";
+
+/* Class = "NSWindow"; title = "About"; ObjectID = "LHu-18-Ydc"; */
+"LHu-18-Ydc.title" = "이 앱에 대하여";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "RwJ-hw-YrZ"; */
+"RwJ-hw-YrZ.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "SgH-hJ-2YF"; */
+"SgH-hJ-2YF.title" = "Text Cell";
+
+/* Class = "NSViewController"; title = "Credits"; ObjectID = "YeN-X8-jgu"; */
+"YeN-X8-jgu.title" = "크레딧";
+
+/* Class = "NSViewController"; title = "Contributors"; ObjectID = "plu-cX-rOu"; */
+"plu-cX-rOu.title" = "기여자 목록";
+
+/* Class = "NSTextFieldCell"; title = "Unknown"; ObjectID = "w2x-lm-uiU"; */
+"w2x-lm-uiU.title" = "Unknown";

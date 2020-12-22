@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1CB8FC5A3A89FA42A6B3DB51 /* Pods_HwpMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F8488A8D0A98C170E4E472 /* Pods_HwpMac.framework */; };
+		36050752257CD44F00B48AA7 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36050751257CD44F00B48AA7 /* AboutVC.swift */; };
 		3611344D257684AE004B6C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611344C257684AE004B6C12 /* AppDelegate.swift */; };
 		36113451257684AE004B6C12 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36113450257684AE004B6C12 /* Document.swift */; };
 		36113453257684AF004B6C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36113452257684AF004B6C12 /* Assets.xcassets */; };
@@ -15,10 +16,15 @@
 		36113462257684AF004B6C12 /* HwpMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36113461257684AF004B6C12 /* HwpMacTests.swift */; };
 		3611346D257684AF004B6C12 /* HwpMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611346C257684AF004B6C12 /* HwpMacUITests.swift */; };
 		3622FDF1257CAABF00E15B1C /* ShortcutsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */; };
+		362EC863258F856A00F614C9 /* CoreHwp in Frameworks */ = {isa = PBXBuildFile; productRef = 362EC862258F856A00F614C9 /* CoreHwp */; };
 		3633B31F257878DC0058A21E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633B31E257878DC0058A21E /* Constants.swift */; };
 		3633B32525787AC40058A21E /* NSStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */; };
 		366A911F257696030007A5F0 /* SidebarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A911E257696030007A5F0 /* SidebarVC.swift */; };
+		366D8383257CD9DC0037DF70 /* LicenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366D8382257CD9DC0037DF70 /* LicenseVC.swift */; };
+		3687DCEC257CE38D00B2231D /* ContributorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3687DCEB257CE38D00B2231D /* ContributorsVC.swift */; };
+		3687DD00257CFD2500B2231D /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3687DD02257CFD2500B2231D /* About.storyboard */; };
 		36C5DCAF25787DBA00DB9083 /* Preference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C5DCB125787DBA00DB9083 /* Preference.storyboard */; };
+		36F60A87258F86C200741FB6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 36F60A86258F86C200741FB6 /* Alamofire */; };
 		36F875EE257748EB00346D64 /* DocumentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875ED257748EB00346D64 /* DocumentVC.swift */; };
 		36F875F32577492300346D64 /* InspectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F22577492300346D64 /* InspectorVC.swift */; };
 		36F875F82577496500346D64 /* MainSplitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F875F72577496500346D64 /* MainSplitVC.swift */; };
@@ -45,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		3394297DDDB702BAA783D2E6 /* Pods-HwpMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwpMacTests.release.xcconfig"; path = "Target Support Files/Pods-HwpMacTests/Pods-HwpMacTests.release.xcconfig"; sourceTree = "<group>"; };
+		36050751257CD44F00B48AA7 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		36113449257684AE004B6C12 /* HwpMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HwpMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3611344C257684AE004B6C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36113450257684AE004B6C12 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
@@ -62,6 +69,11 @@
 		3633B31E257878DC0058A21E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		366A911E257696030007A5F0 /* SidebarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarVC.swift; sourceTree = "<group>"; };
+		366D8382257CD9DC0037DF70 /* LicenseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseVC.swift; sourceTree = "<group>"; };
+		3687DCEB257CE38D00B2231D /* ContributorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsVC.swift; sourceTree = "<group>"; };
+		3687DD01257CFD2500B2231D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
+		3687DD07257CFD2700B2231D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/About.strings; sourceTree = "<group>"; };
+		3687DD0C257CFD2800B2231D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/About.strings; sourceTree = "<group>"; };
 		36C5DCAE25787DAB00DB9083 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		36C5DCB025787DBA00DB9083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preference.storyboard; sourceTree = "<group>"; };
 		36C5DCB625787DBE00DB9083 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Preference.strings; sourceTree = "<group>"; };
@@ -85,7 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F60A87258F86C200741FB6 /* Alamofire in Frameworks */,
 				1CB8FC5A3A89FA42A6B3DB51 /* Pods_HwpMac.framework in Frameworks */,
+				362EC863258F856A00F614C9 /* CoreHwp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,11 +189,9 @@
 		3640DDE22577DE510010DAB3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				366A911E257696030007A5F0 /* SidebarVC.swift */,
-				36F875ED257748EB00346D64 /* DocumentVC.swift */,
-				36F875F22577492300346D64 /* InspectorVC.swift */,
-				36F875F72577496500346D64 /* MainSplitVC.swift */,
-				3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */,
+				3687DD11257CFD8700B2231D /* Main */,
+				3687DD10257CFD7400B2231D /* Preferences */,
+				3687DCEA257CE37100B2231D /* About */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,8 +201,38 @@
 			children = (
 				36113454257684AF004B6C12 /* Main.storyboard */,
 				36C5DCB125787DBA00DB9083 /* Preference.storyboard */,
+				3687DD02257CFD2500B2231D /* About.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3687DCEA257CE37100B2231D /* About */ = {
+			isa = PBXGroup;
+			children = (
+				36050751257CD44F00B48AA7 /* AboutVC.swift */,
+				366D8382257CD9DC0037DF70 /* LicenseVC.swift */,
+				3687DCEB257CE38D00B2231D /* ContributorsVC.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		3687DD10257CFD7400B2231D /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		3687DD11257CFD8700B2231D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				36F875F72577496500346D64 /* MainSplitVC.swift */,
+				366A911E257696030007A5F0 /* SidebarVC.swift */,
+				36F875ED257748EB00346D64 /* DocumentVC.swift */,
+				36F875F22577492300346D64 /* InspectorVC.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		A0675086768A588657A4E3EC /* Pods */ = {
@@ -235,6 +277,10 @@
 			dependencies = (
 			);
 			name = HwpMac;
+			packageProductDependencies = (
+				362EC862258F856A00F614C9 /* CoreHwp */,
+				36F60A86258F86C200741FB6 /* Alamofire */,
+			);
 			productName = HwpMac;
 			productReference = 36113449257684AE004B6C12 /* HwpMac.app */;
 			productType = "com.apple.product-type.application";
@@ -310,6 +356,10 @@
 				ko,
 			);
 			mainGroup = 36113440257684AE004B6C12;
+			packageReferences = (
+				362EC861258F856A00F614C9 /* XCRemoteSwiftPackageReference "Hwp-Swift" */,
+				36F60A85258F86C200741FB6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3611344A257684AE004B6C12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +378,7 @@
 			files = (
 				36113453257684AF004B6C12 /* Assets.xcassets in Resources */,
 				36113456257684AF004B6C12 /* Main.storyboard in Resources */,
+				3687DD00257CFD2500B2231D /* About.storyboard in Resources */,
 				36C5DCAF25787DBA00DB9083 /* Preference.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,9 +527,12 @@
 				36F875F32577492300346D64 /* InspectorVC.swift in Sources */,
 				3633B32525787AC40058A21E /* NSStoryboard+Extension.swift in Sources */,
 				3611344D257684AE004B6C12 /* AppDelegate.swift in Sources */,
+				366D8383257CD9DC0037DF70 /* LicenseVC.swift in Sources */,
 				3622FDF1257CAABF00E15B1C /* ShortcutsVC.swift in Sources */,
 				36F875F82577496500346D64 /* MainSplitVC.swift in Sources */,
+				3687DCEC257CE38D00B2231D /* ContributorsVC.swift in Sources */,
 				36F875EE257748EB00346D64 /* DocumentVC.swift in Sources */,
+				36050752257CD44F00B48AA7 /* AboutVC.swift in Sources */,
 				3633B31F257878DC0058A21E /* Constants.swift in Sources */,
 				36113451257684AE004B6C12 /* Document.swift in Sources */,
 				366A911F257696030007A5F0 /* SidebarVC.swift in Sources */,
@@ -525,6 +579,16 @@
 				36C5DCBA25787E3600DB9083 /* ko */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3687DD02257CFD2500B2231D /* About.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3687DD01257CFD2500B2231D /* Base */,
+				3687DD07257CFD2700B2231D /* en */,
+				3687DD0C257CFD2800B2231D /* ko */,
+			);
+			name = About.storyboard;
 			sourceTree = "<group>";
 		};
 		36C5DCB125787DBA00DB9083 /* Preference.storyboard */ = {
@@ -835,6 +899,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		362EC861258F856A00F614C9 /* XCRemoteSwiftPackageReference "Hwp-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sboh1214/Hwp-Swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.9.0;
+			};
+		};
+		36F60A85258F86C200741FB6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		362EC862258F856A00F614C9 /* CoreHwp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 362EC861258F856A00F614C9 /* XCRemoteSwiftPackageReference "Hwp-Swift" */;
+			productName = CoreHwp;
+		};
+		36F60A86258F86C200741FB6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36F60A85258F86C200741FB6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36113441257684AE004B6C12 /* Project object */;
 }

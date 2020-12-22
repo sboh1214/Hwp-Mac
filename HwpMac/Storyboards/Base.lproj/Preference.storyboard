@@ -11,9 +11,9 @@
         <!--Window Controller-->
         <scene sceneID="T8I-Mc-xeb">
             <objects>
-                <windowController storyboardIdentifier="Preference View" showSeguePresentationStyle="single" id="AES-O0-Fs9" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="Preference Window" showSeguePresentationStyle="single" id="AES-O0-Fs9" sceneMemberID="viewController">
                     <window key="window" title="Preference" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" toolbarStyle="preference" id="w6n-aa-UC2">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="245" y="301" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
@@ -31,6 +31,7 @@
                                 <viewController key="viewController" id="NLd-uV-eoR">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ro6-dB-vqV">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="Dfv-2s-Zer">
                                             <font key="font" metaFont="system"/>
                                             <segments>

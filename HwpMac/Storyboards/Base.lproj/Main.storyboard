@@ -688,6 +688,7 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="HwpMac" customModuleProvider="target">
                     <connections>
+                        <outlet property="aboutMenu" destination="5kV-Vb-QxS" id="lrz-id-WPl"/>
                         <outlet property="preferencesMenu" destination="BOF-NM-1cW" id="kqw-2r-MYz"/>
                     </connections>
                 </customObject>
@@ -699,7 +700,7 @@
         <!--Window Controller-->
         <scene sceneID="shH-DZ-1Vk">
             <objects>
-                <windowController storyboardIdentifier="Document Window Controller" id="4vk-mm-a4h" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="Document Window" id="4vk-mm-a4h" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" toolbarStyle="expanded" id="Yne-lF-JUM">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>

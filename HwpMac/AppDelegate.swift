@@ -1,13 +1,22 @@
 import Cocoa
+import RxSwift
+import RxCocoa
 import KeyboardShortcuts
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    @IBOutlet weak var aboutMenu: NSMenuItem!
     @IBOutlet weak var preferencesMenu: NSMenuItem!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        preferencesMenu.action = #selector(clickPreferenceMenu(_:))
+
+        aboutMenu.rx.action.on(
+            .next(#selector(openAboutWindow(_:)))
+        )
+        preferencesMenu.rx.action.on(
+            .next(#selector(clickPreferenceMenu(_:)))
+        )
 
         KeyboardShortcuts.onKeyUp(for: .test) {
             print("KeyboardShortcuts test")
@@ -18,12 +27,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     }
 
-    lazy var preferenceStoryboard = Storyboard.preference
-    lazy var preferenceController = preferenceStoryboard.instantiate(View.preference) as? NSWindowController
-
     @objc func clickPreferenceMenu(_ sender: Any) {
-        if let controller = preferenceController {
+        let preferenceWindow = Storyboard.preference.instantiate(Window.preference) as? NSWindowController
+        if let controller = preferenceWindow {
             controller.showWindow(self)
+        }
+    }
+
+    @objc func openAboutWindow(_ sender: Any) {
+        let aboutWindow = Storyboard.about.instantiate(Window.about) as? NSWindowController
+        if let window = aboutWindow {
+            window.showWindow(self)
         }
     }
 }
