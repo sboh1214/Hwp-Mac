@@ -15,10 +15,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
 
-        AppCenter.start(withAppSecret: "f869ccef-9952-4c7c-af83-aa91b308e130", services: [
-          Analytics.self,
-          Crashes.self
-        ])
+        if let token = appCenterToken {
+            AppCenter.start(withAppSecret: token, services: [
+              Analytics.self,
+              Crashes.self
+            ])
+            print("Run with App Center")
+        } else {
+            print("Run without App Center")
+        }
 
         aboutMenu.rx.action.on(
             .next(#selector(openAboutWindow(_:)))

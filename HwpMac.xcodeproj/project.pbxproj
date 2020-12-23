@@ -15,6 +15,7 @@
 		36113456257684AF004B6C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36113454257684AF004B6C12 /* Main.storyboard */; };
 		36113462257684AF004B6C12 /* HwpMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36113461257684AF004B6C12 /* HwpMacTests.swift */; };
 		3611346D257684AF004B6C12 /* HwpMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611346C257684AF004B6C12 /* HwpMacUITests.swift */; };
+		3613A2AE25931CEE0058B62A /* AppCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3613A2AD25931CED0058B62A /* AppCenter.swift */; };
 		3622FDF1257CAABF00E15B1C /* ShortcutsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */; };
 		362EC863258F856A00F614C9 /* CoreHwp in Frameworks */ = {isa = PBXBuildFile; productRef = 362EC862258F856A00F614C9 /* CoreHwp */; };
 		3632B58725922D6400CA23BF /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 3632B58625922D6400CA23BF /* AppCenterCrashes */; };
@@ -67,6 +68,7 @@
 		36113468257684AF004B6C12 /* HwpMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HwpMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3611346C257684AF004B6C12 /* HwpMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HwpMacUITests.swift; sourceTree = "<group>"; };
 		3611346E257684AF004B6C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3613A2AD25931CED0058B62A /* AppCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCenter.swift; sourceTree = "<group>"; };
 		3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsVC.swift; sourceTree = "<group>"; };
 		3633B31E257878DC0058A21E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryboard+Extension.swift"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		3633B32325787AA90058A21E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3613A2AD25931CED0058B62A /* AppCenter.swift */,
 				3633B31E257878DC0058A21E /* Constants.swift */,
 				3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */,
 			);
@@ -271,6 +274,7 @@
 			buildPhases = (
 				0FE3EC3B291BFCB4F6871E50 /* [CP] Check Pods Manifest.lock */,
 				36B82B3A2577E08E00204384 /* ShellScript */,
+				36F384BD2593191600537695 /* ShellScript */,
 				36113445257684AE004B6C12 /* Sources */,
 				36113446257684AE004B6C12 /* Frameworks */,
 				36113447257684AE004B6C12 /* Resources */,
@@ -446,6 +450,23 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		36F384BD2593191600537695 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nsh -c ./appcenter-pre-build.sh\n";
+		};
 		8C32A8251A050E92EA1C32BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -537,6 +558,7 @@
 				366D8383257CD9DC0037DF70 /* LicenseVC.swift in Sources */,
 				3622FDF1257CAABF00E15B1C /* ShortcutsVC.swift in Sources */,
 				36F875F82577496500346D64 /* MainSplitVC.swift in Sources */,
+				3613A2AE25931CEE0058B62A /* AppCenter.swift in Sources */,
 				3687DCEC257CE38D00B2231D /* ContributorsVC.swift in Sources */,
 				36F875EE257748EB00346D64 /* DocumentVC.swift in Sources */,
 				36050752257CD44F00B48AA7 /* AboutVC.swift in Sources */,
