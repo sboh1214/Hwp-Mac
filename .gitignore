@@ -73,3 +73,5 @@ iOSInjectionProject/
 # Custom
 HwpMac.xcresult/
 coverage.json
+
+HwpMac/Utils/AppCenter.swift
