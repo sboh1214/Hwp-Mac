@@ -3,10 +3,6 @@ import RxSwift
 import RxCocoa
 import KeyboardShortcuts
 
-import AppCenter
-import AppCenterAnalytics
-import AppCenterCrashes
-
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
@@ -14,16 +10,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var preferencesMenu: NSMenuItem!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-
-        if let token = appCenterToken {
-            AppCenter.start(withAppSecret: token, services: [
-              Analytics.self,
-              Crashes.self
-            ])
-            print("Run with App Center")
-        } else {
-            print("Run without App Center")
-        }
 
         aboutMenu.rx.action.on(
             .next(#selector(openAboutWindow(_:)))
