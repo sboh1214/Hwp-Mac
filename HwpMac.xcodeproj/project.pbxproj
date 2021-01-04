@@ -267,6 +267,7 @@
 			buildPhases = (
 				0FE3EC3B291BFCB4F6871E50 /* [CP] Check Pods Manifest.lock */,
 				36B82B3A2577E08E00204384 /* ShellScript */,
+				36F384BD2593191600537695 /* ShellScript */,
 				36113445257684AE004B6C12 /* Sources */,
 				36113446257684AE004B6C12 /* Frameworks */,
 				36113447257684AE004B6C12 /* Resources */,
@@ -438,6 +439,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		36F384BD2593191600537695 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nsh -c ./appcenter-pre-build.sh\n";
 		};
 		8C32A8251A050E92EA1C32BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -906,7 +924,7 @@
 			repositoryURL = "https://github.com/sboh1214/Hwp-Swift.git";
 			requirement = {
 				kind = exactVersion;
-				version = 0.9.0;
+				version = 0.10.0;
 			};
 		};
 		36F60A85258F86C200741FB6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
