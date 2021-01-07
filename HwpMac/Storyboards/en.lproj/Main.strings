@@ -131,6 +131,9 @@
 /* Class = "NSMenuItem"; title = "Use None"; ObjectID = "J7y-lM-qPV"; */
 "J7y-lM-qPV.title" = "Use None";
 
+/* Class = "NSMenuItem"; title = "Document Information..."; ObjectID = "KJa-GQ-g4J"; */
+"KJa-GQ-g4J.title" = "Document Information...";
+
 /* Class = "NSMenuItem"; title = "Revert to Saved"; ObjectID = "KaW-ft-85H"; */
 "KaW-ft-85H.title" = "Revert to Saved";
 

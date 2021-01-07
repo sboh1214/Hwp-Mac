@@ -52,12 +52,11 @@
 /* Begin PBXFileReference section */
 		3394297DDDB702BAA783D2E6 /* Pods-HwpMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwpMacTests.release.xcconfig"; path = "Target Support Files/Pods-HwpMacTests/Pods-HwpMacTests.release.xcconfig"; sourceTree = "<group>"; };
 		36050751257CD44F00B48AA7 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		36063B8E25A7940D0057ABF7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36113449257684AE004B6C12 /* HwpMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HwpMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3611344C257684AE004B6C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36113450257684AE004B6C12 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		36113452257684AF004B6C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		36113455257684AF004B6C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		36113457257684AF004B6C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36113458257684AF004B6C12 /* HwpMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HwpMac.entitlements; sourceTree = "<group>"; };
 		3611345D257684AF004B6C12 /* HwpMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HwpMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36113461257684AF004B6C12 /* HwpMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HwpMacTests.swift; sourceTree = "<group>"; };
@@ -68,17 +67,18 @@
 		3622FDF0257CAABF00E15B1C /* ShortcutsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsVC.swift; sourceTree = "<group>"; };
 		3633B31E257878DC0058A21E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3633B32425787AC40058A21E /* NSStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		3648E9D925A7948600E9E4CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3648E9DA25A7948600E9E4CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preference.storyboard; sourceTree = "<group>"; };
+		3648E9DB25A7948600E9E4CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
+		3648E9DD25A7949600E9E4CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3648E9DE25A794A600E9E4CF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		3648E9E025A794BA00E9E4CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Preference.strings; sourceTree = "<group>"; };
+		3648E9E325A794CF00E9E4CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/About.strings; sourceTree = "<group>"; };
+		3648E9E425A794D600E9E4CF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/About.strings; sourceTree = "<group>"; };
 		366A911E257696030007A5F0 /* SidebarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarVC.swift; sourceTree = "<group>"; };
 		366D8382257CD9DC0037DF70 /* LicenseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseVC.swift; sourceTree = "<group>"; };
 		3687DCEB257CE38D00B2231D /* ContributorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsVC.swift; sourceTree = "<group>"; };
-		3687DD01257CFD2500B2231D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
-		3687DD07257CFD2700B2231D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/About.strings; sourceTree = "<group>"; };
-		3687DD0C257CFD2800B2231D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/About.strings; sourceTree = "<group>"; };
-		36C5DCAE25787DAB00DB9083 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		36C5DCB025787DBA00DB9083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preference.storyboard; sourceTree = "<group>"; };
-		36C5DCB625787DBE00DB9083 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Preference.strings; sourceTree = "<group>"; };
-		36C5DCBA25787E3600DB9083 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
-		36C5DCBE25787E3600DB9083 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Preference.strings; sourceTree = "<group>"; };
+		36D7638325A7959200F48CD5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Preference.strings; sourceTree = "<group>"; };
 		36F875ED257748EB00346D64 /* DocumentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentVC.swift; sourceTree = "<group>"; };
 		36F875F22577492300346D64 /* InspectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorVC.swift; sourceTree = "<group>"; };
 		36F875F72577496500346D64 /* MainSplitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitVC.swift; sourceTree = "<group>"; };
@@ -147,12 +147,12 @@
 		3611344B257684AE004B6C12 /* HwpMac */ = {
 			isa = PBXGroup;
 			children = (
+				36063B8E25A7940D0057ABF7 /* Info.plist */,
 				3611344C257684AE004B6C12 /* AppDelegate.swift */,
 				36113450257684AE004B6C12 /* Document.swift */,
 				36113452257684AF004B6C12 /* Assets.xcassets */,
 				3640DDEB2577DFC60010DAB3 /* Storyboards */,
 				3640DDE22577DE510010DAB3 /* Controller */,
-				36113457257684AF004B6C12 /* Info.plist */,
 				36113458257684AF004B6C12 /* HwpMac.entitlements */,
 				3633B32325787AA90058A21E /* Utils */,
 			);
@@ -352,8 +352,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				ko,
+				Base,
 			);
 			mainGroup = 36113440257684AE004B6C12;
 			packageReferences = (
@@ -574,9 +574,9 @@
 		36113454257684AF004B6C12 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				36113455257684AF004B6C12 /* Base */,
-				36C5DCAE25787DAB00DB9083 /* en */,
-				36C5DCBA25787E3600DB9083 /* ko */,
+				3648E9D925A7948600E9E4CF /* Base */,
+				3648E9DD25A7949600E9E4CF /* en */,
+				3648E9DE25A794A600E9E4CF /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -584,9 +584,9 @@
 		3687DD02257CFD2500B2231D /* About.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3687DD01257CFD2500B2231D /* Base */,
-				3687DD07257CFD2700B2231D /* en */,
-				3687DD0C257CFD2800B2231D /* ko */,
+				3648E9DB25A7948600E9E4CF /* Base */,
+				3648E9E325A794CF00E9E4CF /* en */,
+				3648E9E425A794D600E9E4CF /* ko */,
 			);
 			name = About.storyboard;
 			sourceTree = "<group>";
@@ -594,9 +594,9 @@
 		36C5DCB125787DBA00DB9083 /* Preference.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				36C5DCB025787DBA00DB9083 /* Base */,
-				36C5DCB625787DBE00DB9083 /* en */,
-				36C5DCBE25787E3600DB9083 /* ko */,
+				3648E9DA25A7948600E9E4CF /* Base */,
+				3648E9E025A794BA00E9E4CF /* en */,
+				36D7638325A7959200F48CD5 /* ko */,
 			);
 			name = Preference.storyboard;
 			sourceTree = "<group>";
@@ -739,7 +739,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.sboh.HwpMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -764,7 +764,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.sboh.HwpMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

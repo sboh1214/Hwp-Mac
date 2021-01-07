@@ -1,9 +1,33 @@
 
-/* Class = "NSToolbarItem"; label = "Shortcuts"; ObjectID = "51c-5x-Wla"; */
-"51c-5x-Wla.label" = "단축키";
+/* Class = "NSMenuItem"; title = "Light"; ObjectID = "4RB-Cb-jCm"; */
+"4RB-Cb-jCm.title" = "밝게";
 
-/* Class = "NSToolbarItem"; paletteLabel = "Shortcuts"; ObjectID = "51c-5x-Wla"; */
-"51c-5x-Wla.paletteLabel" = "단축키";
+/* Class = "NSSegmentedCell"; Dfv-2s-Zer.ibShadowedLabels[0] = "General"; ObjectID = "Dfv-2s-Zer"; */
+"Dfv-2s-Zer.ibShadowedLabels[0]" = "일반";
 
-/* Class = "NSWindow"; title = "Preferences"; ObjectID = "9Wl-A8-dRe"; */
-"9Wl-A8-dRe.title" = "설정";
+/* Class = "NSSegmentedCell"; Dfv-2s-Zer.ibShadowedLabels[1] = "Shortcuts"; ObjectID = "Dfv-2s-Zer"; */
+"Dfv-2s-Zer.ibShadowedLabels[1]" = "단축키";
+
+/* Class = "NSMenuItem"; title = "Dark"; ObjectID = "Hh0-6t-1zg"; */
+"Hh0-6t-1zg.title" = "어둡게";
+
+/* Class = "NSViewController"; title = "Shortcuts"; ObjectID = "TGW-yj-HHS"; */
+"TGW-yj-HHS.title" = "단축키";
+
+/* Class = "NSMenuItem"; title = "System Setting"; ObjectID = "Xq1-Az-Emr"; */
+"Xq1-Az-Emr.title" = "시스템 설정";
+
+/* Class = "NSViewController"; title = "General"; ObjectID = "g2S-Ku-vCr"; */
+"g2S-Ku-vCr.title" = "일반";
+
+/* Class = "NSTextFieldCell"; title = "Theme"; ObjectID = "o2I-Dv-uXc"; */
+"o2I-Dv-uXc.title" = "테마";
+
+/* Class = "NSTabViewItem"; label = "General"; ObjectID = "qRS-zw-MqM"; */
+"qRS-zw-MqM.label" = "일반";
+
+/* Class = "NSTabViewItem"; label = "Shortcuts"; ObjectID = "vt3-Yx-Q1V"; */
+"vt3-Yx-Q1V.label" = "단축키";
+
+/* Class = "NSWindow"; title = "Preference"; ObjectID = "w6n-aa-UC2"; */
+"w6n-aa-UC2.title" = "설정";
