@@ -3,7 +3,7 @@
 "1UK-8n-QPP.title" = "툴바 사용자화…";
 
 /* Class = "NSMenuItem"; title = "HwpMac"; ObjectID = "1Xt-HY-uBw"; */
-"1Xt-HY-uBw.title" = "HwpMac";
+"1Xt-HY-uBw.title" = "한글다운";
 
 /* Class = "NSMenu"; title = "Find"; ObjectID = "1b7-l0-nxx"; */
 "1b7-l0-nxx.title" = "찾기";
@@ -36,7 +36,7 @@
 "4J7-dP-txa.title" = "전체화면 보기";
 
 /* Class = "NSMenuItem"; title = "Quit HwpMac"; ObjectID = "4sb-4s-VLi"; */
-"4sb-4s-VLi.title" = "HwpMac 끝내기";
+"4sb-4s-VLi.title" = "한글다운 끝내기";
 
 /* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
 "5QF-Oa-p0T.title" = "편집";
@@ -45,7 +45,7 @@
 "5Vv-lz-BsD.title" = "스타일 복사";
 
 /* Class = "NSMenuItem"; title = "About HwpMac"; ObjectID = "5kV-Vb-QxS"; */
-"5kV-Vb-QxS.title" = "HwpMac에 대해서";
+"5kV-Vb-QxS.title" = "한글다운에 대해서";
 
 /* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
 "6dh-zS-Vam.title" = "실행 복귀";
@@ -84,7 +84,7 @@
 "F2S-fz-NVQ.title" = "도움말";
 
 /* Class = "NSMenuItem"; title = "HwpMac Help"; ObjectID = "FKE-Sm-Kum"; */
-"FKE-Sm-Kum.title" = "HwpMac 도움말";
+"FKE-Sm-Kum.title" = "한글다운 도움말";
 
 /* Class = "NSMenuItem"; title = "Text"; ObjectID = "Fal-I4-PZk"; */
 "Fal-I4-PZk.title" = "텍스트";
@@ -162,7 +162,7 @@
 "OaQ-X3-Vso.title" = "Baseline";
 
 /* Class = "NSMenuItem"; title = "Hide HwpMac"; ObjectID = "Olw-nP-bQN"; */
-"Olw-nP-bQN.title" = "HwpMac 숨기기";
+"Olw-nP-bQN.title" = "한글다운 숨기기";
 
 /* Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "OwM-mh-QMV"; */
 "OwM-mh-QMV.title" = "Find Previous";
@@ -363,7 +363,7 @@
 "tlD-Oa-oAM.title" = "Kern";
 
 /* Class = "NSMenu"; title = "HwpMac"; ObjectID = "uQy-DD-JDr"; */
-"uQy-DD-JDr.title" = "HwpMac";
+"uQy-DD-JDr.title" = "한글다운";
 
 /* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
 "uRl-iY-unG.title" = "자르기";
