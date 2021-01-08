@@ -162,7 +162,7 @@
 "OaQ-X3-Vso.title" = "Baseline";
 
 /* Class = "NSMenuItem"; title = "Hide HwpMac"; ObjectID = "Olw-nP-bQN"; */
-"Olw-nP-bQN.title" = "HwpMac 숨기기";
+"Olw-nP-bQN.title" = "한글다운 숨기기";
 
 /* Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "OwM-mh-QMV"; */
 "OwM-mh-QMV.title" = "Find Previous";
@@ -363,7 +363,7 @@
 "tlD-Oa-oAM.title" = "Kern";
 
 /* Class = "NSMenu"; title = "HwpMac"; ObjectID = "uQy-DD-JDr"; */
-"uQy-DD-JDr.title" = "HwpMac";
+"uQy-DD-JDr.title" = "한글다운";
 
 /* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
 "uRl-iY-unG.title" = "자르기";
